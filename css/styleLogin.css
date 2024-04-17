@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+}
+
+
+header {
+    overflow: hidden;
+    background-color: #ffffff;
+
+    padding: 10px;
+    margin-top: 0;
+    
+
+    ul,
+    img,
+    li {
+        display: inline-block;
+        margin: 0 20px;
+        vertical-align: middle; /* Align the items vertically */
+    }
+
+    #outer {
+        margin-top:10px; /*no he encontrado otra solucion para centrarlo en vertical sin usar flexbox*/
+        float: right;
+    }
+
+    a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+    a.choosen {
+        background-color: rgba(15, 57, 244, 0.608);
+        color: white;
+      }
+
+    li {
+
+        text-align: center;
+        font-size: larger;
+    }
+
+    a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+}
+
+.image {
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+    border-radius: 30px;
+    display: flex;
+
+    width: 100%;
+    justify-content: center;
+    img {
+        border-radius: 50%;
+    }
+
+}
+h1{
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.title {
+    margin-top: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*main{
+    display: flex;
+    flex-direction: column;   
+}*/
+#form_and_principios{
+    display: flex;
+    padding: 0 5%;
+
+    min-height: calc(100vh - 40vh);
+    width: 100%;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex: 0.5;
+    align-items: flex-start;
+    margin:2%;
+    max-width: 40%;
+    flex-direction:column;
+    border-radius: 15px;
+    border: 2px solid rgb(116, 151, 255);
+    padding: 1%
+
+   
+    
+}
+/*input[type="text"]{
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0;
+    margin: 2% 0;
+    box-sizing:content-box;
+
+    
+    //max-width: 100%;
+    //min-width: 300px; mierdon de solucion    
+    
+}*/
+
+input, textarea{
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight:550;
+}
+
+.asterisco{
+    color: rgb(255, 0, 0);
+}
+
+#radio{
+    font-size: 80%;
+}
+/*#otro{
+    //width: 100%;
+
+    //min-width: 300px;
+    height: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+   
+}*/
+
+#enviar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#principios{
+    padding:0% 10%;
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+    text-align: justify;
+}
+
+textarea{
+    height: 100px;
+}
+
+
+
+footer {
+    background-color: rgb(116, 151, 255);
+    padding-bottom: 0px;
+    
+    display: flex;
+    /* Use flexbox */
+    align-items: center;
+    margin: auto;
+    
+}
+
+footer>p{
+    margin-top:10px;
+    width: 100%;
+    text-align: center;
+}
+
+a:hover {
+    color: #e5dbdb;
+    /* Set background color when hovered */
+
+}
+
+h2 {
+    margin-top: 15px;
+    color:rgba(91, 91, 255, 0.675)
+}
+
+
+
+
+.form-group {
+    position: relative;
+    margin: 12px 0;
+}
+
+.form-group input {
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: #acacac solid 2px;
+    background-color: transparent;
+    color: #eee;
+    transition: 0.15s all ease;
+}
+
+.form-group input:focus {
+    border-color: #eee;
+}
+
+.form-group input::placeholder {
+    color: transparent;
+}
+
+.form-group .form-label {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    font-size: 18px;
+    padding: 0 13px; /*10*/
+    color: #acacac;
+    pointer-events: none;
+    transition: 0.15s all ease;
+}
+
+.form-group input:focus + .form-label,
+.form-group input:not(:placeholder-shown) + .form-label {
+    transform: translate(5px, -22px);
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #acacac;
+}
+
+
+.button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px #0b4c77;
+  }
+  
+  .button:hover {background-color: #5cbeff}
+  
+  .button:active {
+    background-color: #5cbeff;
+    box-shadow: 0 0px #3498db8d;
+    transform: translateY(4px);
+  }
+
+
+
+.break {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #acacac; 
+    line-height: 0.1em;
+    margin: 20px 0 20px; 
+    font-weight: bold;
+ } 
+ 
+ .break span { 
+     background:#fff; 
+     padding:0 10px; 
+     color: #acacac;
+     font-weight: bold;
+ }
+
+
+
+ .buttonR {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #000000;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+
+    border: 1px solid #acacac;
+    box-shadow: 0 4px #acacac;
+  }
+  
+  .buttonR:hover {background-color: #c5c5c5}
+  
+  .buttonR:active {
+    background-color: #c5c5c5;
+    box-shadow: 0 0px #3498db8d;
+    transform: translateY(4px);
+  }
+
+
+
+
+  .close-container{
+    /*position: relative;*/
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: middle; /* Align the items vertically */
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .leftright{
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: #acacac;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transition: all .3s ease-in;
+  }
+  
+  .rightleft{
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: #acacac;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all .3s ease-in;
+  }
+  
+  .close-container:hover .leftright{
+    transform: rotate(-45deg);
+    background-color: #F25C66;
+  }
+  .close-container:hover .rightleft{
+    transform: rotate(45deg);
+    background-color: #F25C66;
+  }

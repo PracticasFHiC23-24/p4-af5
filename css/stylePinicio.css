@@ -1,0 +1,414 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'TTRounds'; /* Name your font family */
+
+    src: url('../font-family/TT-Rounds-Neue-Trial-Black-BF6438a171b0672.ttf') format('truetype'); /* Locate the .ttf file within your directory*/
+}
+
+
+header {
+    overflow: hidden;
+    background-color: #ffffff;
+
+    padding: 10px;
+    margin-top: 0;
+
+
+
+    ul,
+    img,
+    li {
+        display: inline-block;
+        margin: 0 20px;
+        vertical-align: middle;
+        /* Align the items vertically */
+    }
+
+    #outer {
+        margin-top: 10px;
+        /*no he encontrado otra solucion para centrarlo en vertical sin usar flexbox*/
+        float: right;
+    }
+
+    a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+
+    /*a.choosen {
+        background-color: rgba(15, 57, 244, 0.608);
+        color: white;
+    }*/
+
+    li {
+
+        text-align: center;
+        font-size: larger;
+    }
+
+    /*a:hover {
+        background-color: #ddd;
+        color: black;
+    }*/
+}
+
+.image {
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+body {
+    margin: 0;
+    text-align: justify;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: 'TTRounds', sans-serif;
+}
+
+#main {
+    display: flex;
+    min-height: calc(100vh - 40vh);
+
+}
+
+#main>article {
+    flex: 5;
+    border: 2px solid rgb(116, 151, 255);
+    margin: 5px 7px 20px 7px;
+}
+
+#main>nav,
+#main>aside {
+    /*flex: 0 0 20vw;*/
+    background: beige;
+    border: 2px solid rgb(116, 151, 255);
+    margin: 5px 7px 20px 7px;
+    /*padding doesnt work out here*/
+
+}
+
+#main>nav {
+    flex: 0 0 17vw;
+}
+
+
+#main>aside {
+    flex: 2;
+}
+
+#main>nav {
+    order: -1;
+}
+
+aside>img,
+article>img {
+    display: block;
+
+    margin: auto;
+}
+
+aside>p,
+article>p {
+    padding: 15px;
+
+    font-size: x-large;
+
+}
+
+
+
+
+nav>ul {
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /*evitar descentro punto init lista*/
+    list-style-type: none;
+
+
+}
+
+ul>img {
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0 10px;
+
+    display: block;
+
+    margin: auto;
+
+}
+
+ul>li {
+    text-align: center;
+}
+
+nav>p {
+    font-size: small;
+    text-align: center;
+}
+
+
+#main>nav {
+
+    /*to avoid merging with header style*/
+    ul>li {
+        font-size: medium;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+.title {
+    margin-top: 10px;
+    text-align: center;
+    font-size: x-large;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+
+
+
+footer {
+    background-color: rgb(116, 151, 255);
+    padding-bottom: 0px;
+
+    display: flex;
+    /* Use flexbox */
+    align-items: center;
+    margin: auto;
+
+}
+
+footer>p {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.thumbnail {
+    top: -18px;
+    left: -13px;
+    display: block;
+    z-index: 999;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+/*change the number below to scale to the appropriate size*/
+.thumbnail:hover {
+    transform: scale(1.3);
+
+}
+
+
+h1 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
+.col-lg-6{
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.cursos{
+
+
+    /*display: inline-block;*/
+    margin: 20px ;
+    
+    flex:1;
+    
+
+    cursor: pointer;
+    outline: none;
+    color: #000000;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+
+    border: 1px solid #acacac;
+    box-shadow: 0 4px #acacac;
+}
+
+
+.cursos:hover {background-color: #c5c5c5}
+  
+.cursos:active {
+  background-color: #c5c5c5;
+  box-shadow: 0 0px #3498db8d;
+  transform: translateY(4px);
+}
+
+.play{
+
+    filter: drop-shadow(5px 5px 5px #222); 
+
+    /*margin-top: 20px;
+    margin-right: 20px;
+    
+    float: right;*/
+    margin: 0;
+    padding-right: 0;
+    justify-self: center;
+    /*less visible*/
+    top: -13px;
+    left: -8px;
+    display: block;
+    z-index: 999;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+/*change the number below to scale to the appropriate size*/
+.play:hover {
+    transform: scale(1.1);
+
+}
+
+
+
+
+.cursRight{
+    display: grid;
+    grid-template-rows: repeat(2, auto); /* Three rows with auto height */
+    grid-template-columns: 1fr; /* One column */
+    gap: 10px; /* Gap between grid items */
+    
+
+    float:right;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+/*progres update*/
+.circle-wrap {
+
+    /*margin-bottom: 20px;
+    margin-right: 20px;
+    float:right;*/
+    
+    margin-top: 40px;
+    
+
+    width: 150px;
+    height: 150px;
+    background: #fefcff;
+    border-radius: 50%;
+    border: 1px solid #cdcbd0;
+  }
+  
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+  
+  .circle-wrap .inside-circle {
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+    background: #d2eaf1;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 14px;
+    margin-left: 14px;
+    color: #1e51dc;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+  }
+  
+  /* color animation */
+  
+  /* 3rd progress bar */
+  .mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #227ded;
+  }
+  
+  .mask.full,
+  .circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(110deg);
+  }
+  
+  @keyframes fill{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(110deg);
+    }
+  }
+
+.cursLeft{
+    display: grid;
+    grid-template-rows: repeat(2, auto); /* Three rows with auto height */
+    grid-template-columns: 1fr; /* One column */
+    gap: 10px; /* Gap between grid items */
+    
+
+    float:left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.cursLogo{
+
+    
+    /*margin-top: 70px;
+    margin-left: 20px;
+    float: left;*/
+    
+    /*justify-content: center; /* Center items horizontally */
+    align-items: end; /* Center items vertically */
+    border-radius: 15px;
+    border: 2px solid #000000;
+}
+
+/*left of course*/
+h2 {
+    font-size: 40px;
+    
+    margin-top: 3%;
+    font-weight: bold;
+    justify-content: start; /* Center items horizontally */
+    color: #227ded;
+
+}
