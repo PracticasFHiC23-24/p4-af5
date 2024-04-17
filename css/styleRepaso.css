@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'TTRounds';
+    /* Name your font family */
+
+    src: url('../font-family/TT-Rounds-Neue-Trial-Black-BF6438a171b0672.ttf') format('truetype');
+    /* Locate the .ttf file within your directory*/
+}
+
+
+header {
+    overflow: hidden;
+    background-color: #ffffff;
+
+    padding: 10px;
+    margin-top: 0;
+
+
+
+    ul,
+    img,
+    li {
+        display: inline-block;
+        margin: 0 20px;
+        vertical-align: middle;
+        /* Align the items vertically */
+    }
+
+    #outer {
+        margin-top: 10px;
+        /*no he encontrado otra solucion para centrarlo en vertical sin usar flexbox*/
+        float: right;
+    }
+
+    a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+
+    /*a.choosen {
+        background-color: rgba(15, 57, 244, 0.608);
+        color: white;
+    }*/
+
+    li {
+
+        text-align: center;
+        font-size: larger;
+    }
+
+    /*a:hover {
+        background-color: #ddd;
+        color: black;
+    }*/
+}
+
+
+.image {
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+body {
+    margin: 0;
+    text-align: justify;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: 'TTRounds', sans-serif;
+}
+
+#main {
+    display: flex;
+    min-height: fit-content;
+
+}
+
+#main>article {
+    flex: 5;
+    border: 2px solid rgb(116, 151, 255);
+    margin: 5px 7px 20px 7px;
+}
+
+#main>nav,
+#main>aside {
+    /*flex: 0 0 20vw;*/
+    background: beige;
+    border: 2px solid rgb(116, 151, 255);
+    margin: 5px 7px 20px 7px;
+    /*padding doesnt work out here*/
+
+}
+
+#main>nav {
+    flex: 0 0 17vw;
+}
+
+
+#main>aside {
+    flex: 2;
+}
+
+#main>nav {
+    order: -1;
+}
+
+aside>img,
+article>img {
+    display: block;
+
+    margin: auto;
+}
+
+aside>p,
+article>p {
+    padding: 15px;
+
+    font-size: x-large;
+
+}
+
+
+
+
+nav>ul {
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /*evitar descentro punto init lista*/
+    list-style-type: none;
+
+
+}
+
+ul>img {
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0 10px;
+
+    display: block;
+
+    margin: auto;
+
+}
+
+ul>li {
+    text-align: center;
+}
+
+nav>p {
+    font-size: small;
+    text-align: center;
+}
+
+
+#main>nav {
+
+    /*to avoid merging with header style*/
+    ul>li {
+        font-size: medium;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+.title {
+    margin-top: 10px;
+    text-align: center;
+    font-size: x-large;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+
+
+
+footer {
+    background-color: rgb(116, 151, 255);
+    padding-bottom: 0px;
+
+    display: flex;
+    /* Use flexbox */
+    align-items: center;
+    margin: auto;
+
+}
+
+footer>p {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.thumbnail {
+    top: -18px;
+    left: -13px;
+    display: block;
+    z-index: 999;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+/*change the number below to scale to the appropriate size*/
+.thumbnail:hover {
+    transform: scale(1.3);
+
+}
+
+
+h1 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.search_bar{
+    width:fit-content;
+    align-self:center;
+
+}
+
+
+
+.row{
+    margin: 1% 5%;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    /*height: fit-content;*/
+}
+
+.nivells {
+
+
+    /*display: inline-block;*/
+    margin: 20px;
+
+    flex: 1;
+
+    
+
+    border-radius: 15px;
+
+    border: 1px solid #acacac;
+
+}
+
+
+.buttonT {
+    width: 150px;
+    margin:10px;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #000000;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+
+    border: 1px solid #acacac;
+    box-shadow: 0 4px #4b4a4a;
+}
+
+.buttonT:hover {
+    background-color: #c5c5c5
+}
+
+.buttonT:active {
+    background-color: #c5c5c5;
+    box-shadow: 0 0px #3498db8d;
+    transform: translateY(4px);
+}
+
+
+.button {
+
+    
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px #0b4c77;
+}
+
+.button:hover {
+    background-color: #5cbeff
+}
+
+.button:active {
+    background-color: #5cbeff;
+    box-shadow: 0 0px #3498db8d;
+    transform: translateY(4px);
+}
+
+
+
+
+.nivellRight {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    /* Three rows with auto height */
+    grid-template-rows: 1fr;
+    /* One column */
+    gap: 10px;
+    /* Gap between grid items */
+
+    
+
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+
+.nivellLeft {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    /* Three rows with auto height */
+    grid-template-columns: 1fr;
+    /* One column */
+    gap: 10px;
+    /* Gap between grid items */
+    
+
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/*left of course*/
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: start;
+    /* Center items horizontally */
+    color: #227ded;
+
+}
