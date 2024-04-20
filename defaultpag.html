@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiReTo Musical</title>
+    <link rel="icon" href="./images/wesicpfp.png" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
+BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styleDefaultPag.css" />
+
+    <script src=" https://unpkg.com/vue@3/dist/vue.global.js "></script>
+  <script src="./js/appDefaultpag.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="">
+            <img class="image" src="images/wesicpfp.png" alt="Wesic logo" height="70">
+        </div>
+        <div class="dropdownH">
+            <ul class="languagepicker roundborders large">
+                <a href="#nl">
+                    <li><img src="images/catflag.png" height="20" />CAT</li>
+                </a>
+                <a href="#de">
+                    <li><img src="images/spnflag.png" height="20" />ESP</li>
+                </a>
+                <a href="#en">
+                    <li><img src="images/engflag.png" height="20" />ENG</li>
+                </a>
+    
+            </ul>
+        </div>
+        
+        <!--center stff and float to right an allat-->
+
+    </header>
+
+    
+
+    
+
+
+
+    <main class="container-fluid">
+        <div id="app" class="row">
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="element">
+                    <h1>LA MILLOR EINA PER APRENDRE MÚSICA!!!</h1>
+                    <div class="col-md">
+                        <button @click="openPage('./underconstruction.html')" class="button" type="submit">COMENÇAR ARA</button>
+                        <!--style="background-color: #3498db; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"-->
+                    </div>
+
+                    <div class="col-md">
+                        <button @click="openPage('./login.html')" class="buttonR" href="index.html" type="menu">JA TINC COMPTE</button>
+                        <!--style="background-color: #3498db; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"-->
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-6 contenidor">
+                <div class="image-container">
+
+                    <img class="img-fluid mx-auto d-block " src="images/mascota_basic1-removebg-preview.png"
+                        alt="Mascota">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

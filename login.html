@@ -4,16 +4,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prácticas de FHiC - MiReTo Music</title>
+    <title>MiReTo - Inici de sessió</title>
+    <link rel="icon" href="./images/wesicpfp.png" type="image/png">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
 BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styleLogin.css" />
+    <script src=" https://unpkg.com/vue@3/dist/vue.global.js "></script>
+  <script src="./js/appLogin.js" defer></script>
 </head>
 
 <body>
-    <header>
+    <header id="header">
 
-        <div class="close-container">
+        <div @click="openPage('./defaultpag.html')" class="close-container">
             <div class="leftright"></div>
             <div class="rightleft"></div>
         </div>
@@ -49,27 +53,27 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
                         </div>-->
 
                         <div class="col-md form-group">
-                            <input type="text" class="form-control" placeholder="Usuari" required/>
+                            <input id="userInput" type="text" class="form-control" placeholder="Usuari" v-model="user"  required style="color: black;"/>
                             <label class="form-label">Usuari</label>
                         </div>
                         <div class="col-md form-group">
-                            <input type="password" class="form-control" placeholder="Contrasenya" required/>
+                            <input id="pswdInput" type="password" class="form-control" placeholder="Contrasenya" v-model="pswd"  required style="color: black;"/>
                             <label class="form-label">Contrasenya</label>
                         </div>
 
-
+                        <div id="warning" style="color: red; display: none; font-style: italic; font-size:small; margin: 0;">{{warning}}</div>
                     </section>
                     
 
                     <div class="col-md">
-                        <button class="button" type="submit">ENTRAR</button>
+                        <button @click="checkLogin()" class="button" type="submit" style="margin-top: 40px;">ENTRAR</button>
                         <!--style="background-color: #3498db; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"-->
                     </div>
 
                     <p class="break"><span>o</span></p>
 
                     <div class="col-md">
-                        <button class="buttonR" href="index.html" type="menu">CREAR COMPTE</button>
+                        <button @click="openPage('./underconstruction.html')" class="buttonR" href="index.html" type="menu">CREAR COMPTE</button>
                         <!--style="background-color: #3498db; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"-->
                     </div>
 

@@ -308,6 +308,7 @@ h1 {
     margin-right: 30px;
 }
 
+
 /*progres update*/
 .circle-wrap {
 
@@ -326,14 +327,20 @@ h1 {
   }
   
   .circle-wrap .circle .mask,
-  .circle-wrap .circle .fill {
+  .circle-wrap .circle .fill,
+  .circle-wrap .circle12 .mask12,
+  .circle-wrap .circle12 .fill12,
+  .circle-wrap .circle3 .mask3,
+  .circle-wrap .circle3 .fill3 {
     width: 150px;
     height: 150px;
     position: absolute;
     border-radius: 50%;
   }
   
-  .circle-wrap .circle .mask {
+  .circle-wrap .circle .mask, 
+  .circle-wrap .circle12 .mask12, 
+  .circle-wrap .circle3 .mask3 {
     clip: rect(0px, 150px, 150px, 75px);
   }
   
@@ -355,8 +362,10 @@ h1 {
   
   /* color animation */
   
-  /* 3rd progress bar */
-  .mask .fill {
+  /* 3rd progress bar 1*/
+  .mask .fill,
+  .mask12 .fill12,
+  .mask3 .fill3  {
     clip: rect(0px, 75px, 150px, 0px);
     background-color: #227ded;
   }
@@ -375,6 +384,45 @@ h1 {
       transform: rotate(110deg);
     }
   }
+
+/*animation 2 75perc*/
+
+  .mask12.full12,
+  .circle12 .fill12 {
+    animation: fill12 ease-in-out 3s;
+    transform: rotate(20deg);
+  }
+  
+  @keyframes fill12{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(20deg);
+    }
+  }
+
+
+/*animation 3 3perc*/
+
+.mask3.full3,
+.circle3 .fill3 {
+  animation: fill3 ease-in-out 3s;
+  transform: rotate(5deg);
+}
+
+@keyframes fill3{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+
+
+
 
 .cursLeft{
     display: grid;

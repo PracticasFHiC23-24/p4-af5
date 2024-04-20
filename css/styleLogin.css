@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'TTRounds';
+    /* Name your font family */
+
+    src: url('../font-family/TT-Rounds-Neue-Trial-Black-BF6438a171b0672.ttf') format('truetype');
+    /* Locate the .ttf file within your directory*/
+}
 
 header {
     overflow: hidden;
