@@ -68,7 +68,13 @@ header {
     float: left;
     border-radius: 50%;
     display: inline-block;
-    margin: 10px 10px;
+    margin: 0px 10px 10px;
+
+}
+
+.textHeaderIcons{
+    color:#acacac;
+    font-size: small;
 }
 
 body {
@@ -399,3 +405,7 @@ h2 {
     align-items: center;
   
 }
+
+
+
+
