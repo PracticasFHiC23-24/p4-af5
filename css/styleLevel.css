@@ -263,15 +263,10 @@ h1 {
 
 
 .buttonT {
-
-
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 30px;
-    margin-left: 30px;
-
-
-
+    margin-right: 0px;
+    margin-left: 0px;
     padding: 10px 25px;
     font-size: 20px;
     font-weight: bold;
@@ -280,15 +275,12 @@ h1 {
     outline: none;
     color: #000000;
     background-color: #fff;
-    border: none;
-    border-radius: 15px;
-
     border: 1px solid #acacac;
+    border-radius: 15px;
     box-shadow: 0 4px #acacac;
-}
-
-.buttonT:hover {
-    background-color: #c5c5c5
+    text-decoration: none; /* Eliminar el subrayado */
+    display: block; /* Esto es crucial para que el enlace se comporte como un bloque */
+    width: 95%; /* Ocupar todo el ancho posible dentro de su contenedor */
 }
 
 .buttonT:active {
@@ -299,15 +291,10 @@ h1 {
 
 
 .button {
-
-
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 30px;
-    margin-left: 30px;
-
-    
-
+    margin-right: 0px;
+    margin-left: 0px;
     padding: 10px 25px;
     font-size: 20px;
     font-weight: bold;
@@ -319,6 +306,9 @@ h1 {
     border: none;
     border-radius: 15px;
     box-shadow: 0 4px #0b4c77;
+    text-decoration: none; /* Eliminar el subrayado */
+    display: block; /* Esto es crucial para que el enlace se comporte como un bloque */
+    width: 95%; /* Ocupar todo el ancho posible dentro de su contenedor */    
 }
 
 .button:hover {
@@ -330,9 +320,6 @@ h1 {
     box-shadow: 0 0px #3498db8d;
     transform: translateY(4px);
 }
-
-
-
 
 .nivellRight {
     display: flex;
@@ -347,7 +334,6 @@ h1 {
     margin-bottom: 20px;
     margin-right: 30px;
     margin-left: 30px;
-
 
 }
 
