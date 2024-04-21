@@ -381,18 +381,14 @@ h2 {
 
 /* Estilos del contenedor del vídeo */
 .contenedor-video {
-    width: 600px; /* Ocupa la mitad del ancho de la pantalla */
-    max-width: 640px; /* Establece un ancho máximo para el vídeo */
-    margin-top: 20px; /* Espacio superior para no pegar al borde superior */
-    margin-bottom: 20px; /* Espacio inferior para no pegar al borde inferior */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center;
+    width: 100%; /* Ocupa el ancho del contenedor padre para evitar cualquier desbordamiento */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 20px 0; /* Añade margen arriba y abajo si es necesario */
 }
 
 video {
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center;
-    width: 50%; /* Hace que el vídeo ocupe todo el ancho del contenedor */
+    width: 40%; /* Ajusta el tamaño del vídeo al 50% del contenedor */
     height: auto; /* Mantiene la proporción del vídeo automáticamente */
 }
-
