@@ -61,7 +61,25 @@ const app = Vue.createApp({
 
 app.mount("#form_and_principios");
 
+const passEye = document.querySelector("#passEye");
+const password = document.querySelector("#pswdInput");
+var toggle = true;
 
+passEye.addEventListener("click", function () {
+   
+    // toggle the type attribute
+    const type = password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
+    // toggle the eye icon
+    if (toggle === true) {
+        document.getElementById('passEye').src  = 'images/icons8-eye-100.png';
+        toggle = !toggle;
+    } 
+    else {
+       document.getElementById('passEye').src = 'images/icons8-closed-eye-100.png';
+       toggle = !toggle;
+    }
+});
 
 
 

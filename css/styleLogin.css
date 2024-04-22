@@ -253,6 +253,49 @@ h2 {
 }
 
 
+.input-group {
+    position: relative;
+    margin: 12px 0;
+}
+
+.input-group input {
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: #acacac solid 2px;
+    background-color: transparent;
+    color: #eee;
+    transition: 0.15s all ease;
+}
+
+.input-group input:focus {
+    border-color: #eee;
+}
+
+.input-group input::placeholder {
+    color: transparent;
+}
+
+.input-group .form-label {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    font-size: 18px;
+    padding: 0 13px; /*10*/
+    color: #acacac;
+    pointer-events: none;
+    transition: 0.15s all ease;
+}
+
+.input-group input:focus + .form-label,
+.input-group input:not(:placeholder-shown) + .form-label {
+    transform: translate(5px, -22px);
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #acacac;
+}
+
+
 .button {
     display: flex;
     width: 100%;
