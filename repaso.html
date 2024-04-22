@@ -16,9 +16,9 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
   <script src="./js/appRepaso.js" defer></script>
 </head>
 
-<body style="overflow-x: hidden;">
+<body id="app" style="overflow-x: hidden;">
 
-    <header id="app" class="row align-items-center justify-content-md-center" style="margin-top: 0px;">
+    <header class="row align-items-center justify-content-md-center" style="margin-top: 0px;">
         <div class="col-auto">
           <img class="image d-none d-lg-block" src="images/wesicpfp.png" alt="Wesic logo" height="70">
         </div>
@@ -62,10 +62,10 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
             <h1>REPÀS</h1>
         </div>
         <div class="search__search__container">
-            <div class="search__container">
-                <input class="search__input" type="text" placeholder="Buscar per tema">
+            <div class="search__container ">
+                <input class="search__input" v-on:keyup="render" type="text" placeholder="Buscar per tema">
             </div>
-            <div class="calendar">
+            <div class="calendar thumbnail">
                 <img src="images/calendar.png" alt="Cerca per data"
                                 height="40">
             </div>
@@ -73,203 +73,21 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 
   
       <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>32</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>31</h2>
-                    <h2>Clau de Fa</h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>30</h2>
-                    <h2>Polirítmia</h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>29</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>28</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>27</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>26</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>25</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>24</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>23</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>22</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>21</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>20</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>19</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>18</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>17</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>16</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>15</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>14</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col"> 
-                <div class="buttonT thumbnail_btn">
-                    <h2>13</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>12</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>11</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>10</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>9</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>8</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>7</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>6</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>5</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>4</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>3</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>2</h2>
-                    <h2>Pentagrama </h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="buttonT thumbnail_btn">
-                    <h2>1</h2>
-                    <h2>Pentagrama </h2>
+        <div class="row" >
+            <div class="col" v-for="item in rendered" :key="item.niv">
+                <div class="buttonT thumbnail_btn" v-on:click="selectButton">
+                    <h2>{{item.niv}}</h2>
+                    <h2>{{item.tema}}</h2>
                 </div>
             </div>
         </div>
       </div>
 
-      <div class="btn_place">
+      <div id="no_result" v-if="rendered.length==0">
+        <h2>NO S'HA TROBAT CAP NIVELL RELACIONAT</h2>
+      </div>
+
+      <div class="btn_place" v-else>
         <div class="button thumbnail_btn">
          <h2>COMENÇAR EL REPÀS</h2>
         </div>
