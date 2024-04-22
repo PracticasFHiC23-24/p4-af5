@@ -442,7 +442,10 @@ h1 {
     width: 40%;
 
 }
-
+.calendar{
+    padding-left:40px;
+    padding-top: 30px;
+}
     
 .search__input {
     width: 100%;
