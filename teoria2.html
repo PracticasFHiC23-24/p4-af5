@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiReTo - Teoria 1</title>
+    <link rel="icon" href="./images/wesicpfp.png" type="image/png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
+BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styleTeoria.css" />
+
+</head>
+
+<body>
+    <header>
+        <a href="level.html">
+            <div class="close-container">
+                <div class="leftright"></div>
+                <div class="rightleft"></div>
+            </div>
+        </a>
+    </header>
+
+    <main>
+        <div class="title">
+            <h1>Lliçó 2</h1>
+            <h1>Aprèn: LA Menor (Am) </h1>
+        </div>
+
+        <div class="contenedor-video">
+            <video width="320" height="240" controls>
+                <source src="videos/la_menor(1).mp4" type="video/mp4">
+                El teu navegador no suporta l'element de vídeo.
+            </video>
+        </div>
+
+        <div class="contenedor-texto">
+            <p>Benvingut de nou a una altra lliçó de guitarra! </p>
+
+            <p>Avui continuarem ampliant el nostre repertori d'acords amb un dels acords menors més utilitzats i bonics: l'acord de LA Menor, o Am. Recordareu que en la lliçó anterior vam aprendre com tocar l'acord de MI Menor (Em). L'acord de LA Menor té una sonoritat similarment melancòlica i és igual de senzill d'aprendre.</p>
+        
+            <h2>Què Necessites:</h2>
+
+            <p>     - Una guitarra afinada.</p>
+
+            <p>     - Les teves mans.</p>
+
+            <p>     - Ganes d'aprendre.</p>
+
+            <h2>Pas 1: Col·locació de la Guitarra</h2>
+
+            <p>Assegura't que estàs assegut còmodament amb la guitarra ben reposada a la teva falda. El mànec de la guitarra ha d'estar accessible sense que hagis d'estirar massa el braç.</p>
+
+            <h2>Pas 2: Els Dits i les Cordes</h2>
+
+            <p>L'acord de LA Menor és molt similar al de MI Menor, però amb una lleugera variació en la posició dels dits:</p>
+
+            <p>    Dit 1 (índex): Col·loca aquest dit al primer trast de la corda B (segona corda).</p>
+
+            <p>    Dit 2 (dit mig): Aquest dit va al segon trast de la corda D (quarta corda), igual com en Em.</p>
+
+            <p>    Dit 3 (dit anular): Col·loca aquest dit al segon trast de la corda G (tercera corda).</p>
+
+            <img src="images/acordes-menores-la-nr.png" alt="Posición de los dedos en Em" style="display: block; margin: auto;">
+            
+            <h2>Pas 3: Com Prémer les Cordes</h2>
+
+            <p>Com en l'anterior acord que has aprés, assegura't que els teus dits estan ben col·locats i no obstrueixen altres cordes. Prem fermament per evitar brunzits i assegura't que cada corda pugui resonar lliurement quan la toques. Amb els dits en posició, rasca totes les cordes des de la cinquena corda (A) fins a la primera (E). Les cordes han de sonar netes i clares, formant un so agradable i melancòlic que és característic dels acords menors.</p>
+
+            <div class="externalBorder" style="margin-top: 20px; max-width: 100px;">
+                <div class="buttonCont">
+                    <button class="button" type="submit" onclick="playSong()">
+                        <img src="images/icons8-quaver-100.png" alt="Tocar la Guitarra" height="20">
+                    </button>
+                    
+                </div>
+            </div>
+
+            <h2>Pas 4: Integració en la Pràctica</h2>
+
+            <p>Una bona manera de practicar el LA Menor és alternar-lo amb l'acord de MI Menor que ja coneixeu. Això no només ajuda a memoritzar les posicions dels dits, sinó que també millora la vostra habilitat per canviar ràpidament entre acords, una habilitat crucial per tocar cançons.</p>
+
+            <p>Felicitats per haver afegit un altre acord al vostre repertori! L'acord de LA Menor és fonamental en moltes cançons i estils musicals. Recordeu que la pràctica constant és essencial per aprofundir la vostra comprensió i habilitat amb la guitarra. Continueu practicant, i no dubteu a revisar aquesta i altres lliçons quantes vegades necessiteu.</p>
+        
+            <div style="text-align: center;">
+                <a href="underconstruction.html">
+                    <div class="button" style="font-family: 'TTRounds', sans-serif; max-width: 300px; display: inline-block;">EXERCICIS</div>
+                </a>
+            </div>
+
+        </div>
+
+ç
+        <footer>
+            <p>Copyright &copy; FHiC 23-24 - MiReTo Music.</p>
+        </footer>  
+
+    </main>
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+        <audio id="mi_menor" src="videos/la_menor.mp3" controls="false" hidden></audio>
+
+        <script>
+            function playSong() {
+                var song = document.getElementById("mi_menor");
+                song.play();
+            }
+        </script>
+        
+</body>
+
+</html>

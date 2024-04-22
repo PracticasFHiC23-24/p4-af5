@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
 BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styleTeoria.css" />
+
 </head>
 
 <body>
@@ -23,7 +24,6 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
     </header>
 
     <main>
-        
         <div class="title">
             <h1>Lliçó 1</h1>
             <h1>Aprèn: MI Menor (Em) </h1>
@@ -31,12 +31,68 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 
         <div class="contenedor-video">
             <video width="320" height="240" controls>
-                <source src="videos/video_proba.mp4" type="video/mp4">
+                <source src="videos/mi_menor(1).mp4" type="video/mp4">
                 El teu navegador no suporta l'element de vídeo.
             </video>
         </div>
 
+        <div class="contenedor-texto">
+            <p>Benvingut a la nostra lliçó de guitarra!</p>
 
+            <p>Una vegada que els acords majors estan sota control, passarem als seus germans menors, que expressen una qualitat tonal més melancòlica.</p> 
+                
+            <p>Avui aprendrem com tocar un dels acords més senzills i bonics en la guitarra: l'acord de MI Menor, o Em. Aquest acord té un so profund i melancòlic, i és un element fonamental en moltes cançons de diferents estils musicals.</p>
+        
+            <h2>Què Necessites:</h2>
+
+            <p>     - Una guitarra afinada.</p>
+
+            <p>     - Les teves mans.</p>
+
+            <p>     - Ganes d'aprendre.</p>
+
+            <h2>Pas 1: Col·locació de la Guitarra</h2>
+
+            <p>Assegura't que estàs assegut còmodament amb la guitarra ben reposada a la teva falda. El mànec de la guitarra ha d'estar accessible sense que hagis d'estirar massa el braç.</p>
+
+            <h2>Pas 2: Els Dits i les Cordes</h2>
+
+            <p>Per tocar l'acord de MI Menor, només necessitaràs utilitzar dos dits. Aquí tens com ho farem:</p>
+
+            <p>    Dit 1 (dit mig): Col·loca aquest dit al segon trast de la corda A (la cinquena corda començant des de baix).</p>
+
+            <p>    Dit 2 (dit anular): Col·loca aquest dit al segon trast de la corda D (la quarta corda començant des de baix).</p>
+
+            <img src="images/acordes-menores-mi-nr.png" alt="Posición de los dedos en Em" style="display: block; margin: auto;">
+            
+            <h2>Pas 3: Com Prémer les Cordes</h2>
+
+            <p>Assegura't que els teus dits no toquen altres cordes que no siguin les que necessites prémer. Les puntes dels dits haurien de prémer fermament contra les cordes per evitar qualsevol tipus de brunzit quan les cordes sonin. Una vegada els dits estiguin ben col·locats, toca totes les cordes amb la mà dreta. En tocar un Em, pots tocar totes les cordes des de la sisena corda (la més greu) fins a la primera (la més aguda). El so hauria de ser clar i ric, com el següent:</p>
+
+            <div class="externalBorder" style="margin-top: 20px; max-width: 100px;">
+                <div class="buttonCont">
+                    <button class="button" type="submit" onclick="playSong()">
+                        <img src="images/icons8-quaver-100.png" alt="Tocar la Guitarra" height="20">
+                    </button>
+                    
+                </div>
+            </div>
+
+            <h2>Pas 4: Integració en la Pràctica</h2>
+
+            <p>Ara que ja saps com formar l'acord de MI Menor, prova de canviar des d'altres acords bàsics que ja hem après, com són l'acord de MI Major o LA Major. Això t'ajudarà a millorar la teva agilitat i a familiaritzar-te amb el mànec de la guitarra.</p>
+
+            <p>Felicitats, ara ja saps com tocar l'acord de MI Menor a la guitarra! Recorda que la clau per millorar és la pràctica constant. Dedica temps a practicar aquest acord i a integrar-lo en cançons que t'agradin. Amb paciència i pràctica, aviat veuràs com la teva habilitat amb la guitarra creix.</p>
+        
+            <div style="text-align: center;">
+                <a href="ejercicios1.html">
+                    <div class="button" style="font-family: 'TTRounds', sans-serif; max-width: 300px; display: inline-block;">EXERCICIS</div>
+                </a>
+            </div>
+
+        </div>
+
+ç
         <footer>
             <p>Copyright &copy; FHiC 23-24 - MiReTo Music.</p>
         </footer>  
@@ -48,6 +104,16 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+        <audio id="mi_menor" src="videos/mi_menor.mp3" controls="false" hidden></audio>
+
+        <script>
+            function playSong() {
+                var song = document.getElementById("mi_menor");
+                song.play();
+            }
+        </script>
+        
 </body>
 
 </html>
