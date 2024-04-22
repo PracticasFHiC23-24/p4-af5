@@ -254,8 +254,27 @@ footer>p {
 
 }
 
+.thumbnai_btn {
+    top: -18px;
+    left: -13px;
+    display: block;
+    z-index: 999;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+/*change the number below to scale to the appropriate size*/
+.thumbnail_btn:hover {
+    transform: scale(1.1);
+    -webkit-transition-duration: 0.2s;
+
+}
+
 
 h1 {
+    color:#41464b;
     margin-top: 10px;
     font-weight: bold;
 }
@@ -305,12 +324,12 @@ h1 {
     text-align: center;
     cursor: pointer;
     outline: none;
-    color: #000000;
+    color: #41464b;
     background-color: rgb(249, 247, 238);
     border: none;
     border-radius: 15px;
 
-    border: 1px solid #000000;
+    border: 1px solid #41464b;
     box-shadow: 0 3px #4b4a4a;
     h2{
         font-size: 20px;
@@ -335,12 +354,15 @@ h1 {
     width: 100%;
     display:flex;
     justify-content: center;
-    position: fixed;
-    bottom: 10px;
+    position: sticky;
+    margin-bottom: 20px;
+    bottom: 3%;
+
 }
 
+
 .button {
-    width: 300px;
+    width: fit-content;
     padding: 10px 25px;
     font-size: 20px;
     font-weight: bold;
@@ -348,18 +370,18 @@ h1 {
     text-align: center;
     cursor: pointer;
     outline: none;
-    color: #000000;
+    color: #41464b;
     background-color: #227ded;
     border: none;
     border-radius: 15px;
-    border: 1px solid #000000;
+    border: 1px solid #41464b;
     box-shadow: 0 3px #4b4a4a;
     h2{
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
         justify-content: start;
         /* Center items horizontally */
-        color: white;
+        color: rgb(249, 247, 238);
     }
 }
 
@@ -373,15 +395,39 @@ h1 {
     transform: translateY(4px);
 }
 
-/*left of course
-h2 {
+.button2 {
+    width: fit-content;
+    padding: 10px 25px;
     font-size: 20px;
     font-weight: bold;
-    justify-content: start;
-    Center items horizontally 
-    color: #227ded;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #41464b;
+    background-color: #227ded;
+    border: none;
+    border-radius: 15px;
+    border: 1px solid #41464b;
+    box-shadow: 0 3px #4b4a4a;
+    h2{
+        font-size: 10px;
+        font-weight: bold;
+        justify-content: start;
+        /* Center items horizontally */
+        color: rgb(249, 247, 238);
+    }
+}
 
-}*/
+.button2:hover {
+    background-color: #0455b8;
+}
+
+.button2:active {
+    background-color: #227ded;
+    box-shadow: 0 0px #3498db8d;
+    transform: translateY(4px);
+}
 
 
 .search__search__container{
@@ -394,7 +440,6 @@ h2 {
 .search__container {
     padding-top: 30px;
     width: 40%;
-
 
 }
 
