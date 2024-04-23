@@ -12,270 +12,315 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
     <link rel="stylesheet" href="./css/styleMainPage.css" />
 
     <script src=" https://unpkg.com/vue@3/dist/vue.global.js "></script>
-  <script src="./js/appMainPage.js" defer></script>
+    <script src="./js/appMainPage.js" defer></script>
 </head>
 
-<body>
-    <header id="app" class="row align-items-center justify-content-md-center" style="margin-top: 0px; margin-right: 0px;margin-left: 0px;">
+<body style="overflow-x: hidden;">
+    <header id="app" class="row align-items-center justify-content-md-center"
+        style="margin-top: 0px; margin-right: 0px;margin-left: 0px;">
         <div class="col-auto">
-          <img class="image d-none d-lg-block" src="images/wesicpfp.png" alt="Wesic logo" height="70">
+            <img class="image d-none d-lg-block" src="images/wesicpfp.png" alt="Wesic logo" height="70">
         </div>
         <div class="col">
-          <ul id="outer"
-            class="list-unstyled d-flex flex-wrap justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-end">
-            <li class="col-auto">
-              <a href="#" @click="openPage('./pinicio.html')" title="Pàgina d'Inici">
-                <img class="thumbnail mx-md-5 mx-sm-4 mx-3" src="images/icons8-home-page-100.png" alt="Pàgina d'Inici"
-                  height="50">
-                <div class="textHeaderIcons d-none d-md-block">PÀGINA INICI</div>
-              </a>
-            </li>
-            <li class="col-auto">
-              <a href="#" @click="openPage('./underconstruction.html')" title="Nous Cursos">
-                <img class="thumbnail mx-md-5 mx-sm-4 mx-3" src="images/icons8-plus-100.png" alt="Nous Cursos" height="50">
-                <div class="textHeaderIcons d-none d-md-block">NOU CURS</div>
-              </a>
-            </li>
-            <li class="col-auto">
-              <a href="#" @click="openPage('./underconstruction.html')" title="Apartat Social">
-                <img class="thumbnail mx-md-5 mx-sm-4 mx-3" src="images/icons8-team-100.png" alt="Apartat Social"
-                  height="50">
-                <div class="textHeaderIcons d-none d-md-block">ÀREA SOCIAL</div>
-              </a>
-            </li>
-            <li class="col-auto">
-              <a href="#" @click="openPage('./underconstruction.html')" title="Perfil Personal">
-                <img class="thumbnail mx-md-5 mx-sm-4 mx-3" src="images/icons8-account-100.png" alt="Perfil Personal"
-                  height="50">
-                <div class="textHeaderIcons d-none d-md-block">ÀREA PERSONAL</div>
-              </a>
-            </li>
-          </ul>
+            <ul id="outer"
+                class="list-unstyled d-flex flex-wrap justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-end">
+                <li class="col-auto">
+                    <a href="#" @click="openPage('./pinicio.html')" title="Pàgina d'Inici">
+                        <img class="thumbnail mx-md-5 mx-sm-4 mx-2" src="images/icons8-home-page-100.png"
+                            alt="Pàgina d'Inici" height="50">
+                        <div class="textHeaderIcons d-none d-md-block">PÀGINA INICI</div>
+                    </a>
+                </li>
+                <li class="col-auto">
+                    <a href="#" @click="openPage('./underconstruction.html')" title="Nous Cursos">
+                        <img class="thumbnail mx-md-5 mx-sm-4 mx-2" src="images/icons8-plus-100.png" alt="Nous Cursos"
+                            height="50">
+                        <div class="textHeaderIcons d-none d-md-block">NOU CURS</div>
+                    </a>
+                </li>
+                <li class="col-auto">
+                    <a href="#" @click="openPage('./underconstruction.html')" title="Apartat Social">
+                        <img class="thumbnail mx-md-5 mx-sm-4 mx-2" src="images/icons8-team-100.png"
+                            alt="Apartat Social" height="50">
+                        <div class="textHeaderIcons d-none d-md-block">ÀREA SOCIAL</div>
+                    </a>
+                </li>
+                <li class="col-auto">
+                    <a href="#" @click="openPage('./underconstruction.html')" title="Perfil Personal">
+                        <img class="thumbnail mx-md-5 mx-sm-4 mx-2" src="images/icons8-account-100.png"
+                            alt="Perfil Personal" height="50">
+                        <div class="textHeaderIcons d-none d-md-block">ÀREA PERSONAL</div> <!-- mx std as 3 now is 2-->
+                    </a>
+                </li>
+            </ul>
         </div>
-    
-      </header>
 
-    <main>
+    </header>
 
-        <img class="img-fluid" style="z-index: 100; margin-left: 20vw;" src="images/mascota_basic1-removebg-preview.png" alt="Mascota" >
+    <main id="main">
 
-        <div class="container-fluid levelCont">
-                
+        <div class="repasContainer" @click="openPage('./repaso.html')">
+            <img class="btn_repas" style="z-index: 99;" src="images/repascloud.png" alt="Mascota">
+            <!--sobre todo zz-index por debjao del header solo-->
+            <div class="overlay-text">REPÀS</div>
+
+        </div>
+
+
+        <div class="container-fluid levelCont" onLoad="window.scroll(0, 200)">
+
             <!--<div class="externalBorder externalBorder1" >
                     <div class="buttonCont">
                         <button class="button" type="submit"><img src="images/icons8-quaver-100.png" alt="Pàgina d'Inici"
                                 height="20"></button>
                     </div>
                 </div>-->
-                 
-                <img class="img-fluid float-left feedback imageLevels" style="z-index: 50; margin-left: 20vw;" src="images/mascota_basic1-removebg-preview.png" alt="Mascota" >
-                
-                
-                <div class="externalBorder externalBorder1" >
-                    <div class="buttonCont">
-                        <button class="button" type="submit">32</button>
-                    </div>
-                </div>
 
-                <div class="externalBorder externalBorder2" >
-                    <div class="buttonCont">
-                        <button class="button" type="submit">31</button>
-                    </div>
-                </div>
-
-                <div class="externalBorder externalBorder3" >
-                    <div class="buttonCont">
-                        <button class="button" type="submit">30</button>
-                    </div>
-                </div>
-
-                <div class="externalBorder externalBorder4" >
-                    <div class="buttonCont">
-                        <button class="button" type="submit">29</button>
-                    </div>
-                </div>
-
-                <div class="externalBorder externalBorder5" >
-                    <div class="buttonCont">
-                        <button class="button" type="submit">28</button>
-                    </div>
-                </div>
-
-                <div class="externalBorder externalBorder4" >
-                    <div class="buttonCont">
-                        <button class="button" type="submit">27</button>
-                    </div>
-                </div>
+                    <img
+                    class="img-fluid float-left feedback imageLevels" style="z-index: 50; margin-left: 20vw; margin-top: 450px;"
+                    src="images/mascota_guitarra-removebg-preview.png" alt="Mascota">
 
 
-                <div class="externalBorder externalBorder3" >
-                    <div class="buttonCont">
-                        <button class="button" type="submit">26</button>
-                    </div>
-                </div>
+                    <img
+                    class="img-fluid float-left feedback imageLevels" style="z-index: 50; margin-left: 40vw; margin-top: 1150px;"
+                    src="images/mascota_basic1-removebg-preview.png" alt="Mascota">
 
-                <div class="externalBorder externalBorder2" >
-                    <div class="buttonCont">
-                        <button class="button" type="submit">25</button>
-                    </div>
-                </div>
+                    <img
+                    class="img-fluid float-left feedback imageLevels" style="z-index: 50; margin-left: 20vw; margin-top: 2000px;"
+                    src="images/mascota_basic2-removebg-preview.png" alt="Mascota">
 
-                <div class="externalBorder externalBorder1" >
-                    <div class="buttonCont">
-                        <button class="button" type="submit">24</button>
-                    </div>
+                    <img
+                    class="img-fluid float-left feedback imageLevels" style="z-index: 50; margin-left: 40vw; margin-top: 3000px;"
+                    src="images/mascota_guitarra-removebg-preview.png" alt="Mascota">
+
+
+
+
+            <div class="externalBorder externalBorder-3">
+                <div class="buttonDisabledCont">
+                    <button class="buttonDisabled" type="submit">35</button>
                 </div>
             </div>
 
-            <div class="externalBorder externalBorder-1" >
-                <div class="buttonCont">
-                    <button class="button" type="submit">23</button>
+            <div class="externalBorder externalBorder-2">
+                <div class="buttonDisabledCont">
+                    <button class="buttonDisabled" type="submit">34</button>
                 </div>
             </div>
 
-
-            <div class="externalBorder externalBorder-2" >
-                <div class="buttonCont">
-                    <button class="button" type="submit">22</button>
+            <div class="externalBorder externalBorder-1">
+                <div class="buttonDisabledCont">
+                    <button class="buttonDisabled" type="submit">33</button>
                 </div>
             </div>
 
-            <div class="externalBorder externalBorder-3" >
-                <div class="buttonCont">
-                    <button class="button" type="submit">21</button>
+            <div class="externalBorder externalBorder1">
+                <div class="buttonDisabledCont">
+                    <button class="button" type="submit">32</button>
                 </div>
             </div>
 
-            <div class="externalBorder externalBorder-4" >
-                <div class="buttonCont">
-                    <button class="button" type="submit">20</button>
-                </div>
-            </div>
-
-            <div class="externalBorder externalBorder-3" >
-                <div class="buttonCont">
-                    <button class="button" type="submit">19</button>
-                </div>
-            </div>
-
-            <div class="externalBorder externalBorder-2" >
-                <div class="buttonCont">
-                    <button class="button" type="submit">18</button>
-                </div>
-            </div>
-
-            <div class="externalBorder externalBorder-1" >
-                <div class="buttonCont">
-                    <button class="button" type="submit">17</button>
-                </div>
-            </div>
-
-
-            <div class="externalBorder externalBorder1" >
-                <div class="buttonCont">
-                    <button class="button" type="submit">16</button>
-                </div>
-            </div>
-            
             <div class="externalBorder externalBorder2">
                 <div class="buttonCont">
-                    <button class="button" type="submit">15</button>
+                    <button class="button" type="submit">31</button>
                 </div>
             </div>
-            
+
             <div class="externalBorder externalBorder3">
                 <div class="buttonCont">
-                    <button class="button" type="submit">14</button>
+                    <button class="button" type="submit">30</button>
                 </div>
             </div>
-            
+
             <div class="externalBorder externalBorder4">
                 <div class="buttonCont">
-                    <button class="button" type="submit">13</button>
+                    <button class="button" type="submit">29</button>
                 </div>
             </div>
-            
+
             <div class="externalBorder externalBorder5">
                 <div class="buttonCont">
-                    <button class="button" type="submit">12</button>
+                    <button class="button" type="submit">28</button>
                 </div>
             </div>
-            
+
             <div class="externalBorder externalBorder4">
                 <div class="buttonCont">
-                    <button class="button" type="submit">11</button>
+                    <button class="button" type="submit">27</button>
                 </div>
             </div>
-            
+
+
             <div class="externalBorder externalBorder3">
                 <div class="buttonCont">
-                    <button class="button" type="submit">10</button>
+                    <button class="button" type="submit">26</button>
                 </div>
             </div>
+
             
+
             <div class="externalBorder externalBorder2">
                 <div class="buttonCont">
-                    <button class="button" type="submit">9</button>
+                    <button class="button" type="submit">25</button>
                 </div>
             </div>
-            
+
             <div class="externalBorder externalBorder1">
                 <div class="buttonCont">
-                    <button class="button" type="submit">8</button>
+                    <button class="button" type="submit">24</button>
                 </div>
             </div>
-            
-            <div class="externalBorder externalBorder-1">
-                <div class="buttonCont">
-                    <button class="button" type="submit">7</button>
-                </div>
+        </div>
+
+        <div class="externalBorder externalBorder-1">
+            <div class="buttonCont">
+                <button class="button" type="submit">23</button>
             </div>
-            
-            <div class="externalBorder externalBorder-2">
-                <div class="buttonCont">
-                    <button class="button" type="submit">6</button>
-                </div>
-            </div>
-            
-            <div class="externalBorder externalBorder-3">
-                <div class="buttonCont">
-                    <button class="button" type="submit">5</button>
-                </div>
-            </div>
-            
-            <div class="externalBorder externalBorder-4">
-                <div class="buttonCont">
-                    <button class="button" type="submit">4</button>
-                </div>
-            </div>
-            
-            <div class="externalBorder externalBorder-3">
-                <div class="buttonCont">
-                    <button class="button" type="submit">3</button>
-                </div>
-            </div>
-            
-            <div class="externalBorder externalBorder-2">
-                <div class="buttonCont">
-                    <button class="button" type="submit">2</button>
-                </div>
-            </div>
-            
-            <div class="externalBorder externalBorder-1">
-                <div class="buttonCont">
-                    <button class="button" type="submit">1</button>
-                </div>
-            </div>
-            
-            <div class="externalBorder externalBorder1">
-                <div class="buttonCont">
-                    <button class="button" type="submit">0</button>
-                </div>
-            </div>
-            
+        </div>
 
 
-            
+        <div class="externalBorder externalBorder-2">
+            <div class="buttonCont">
+                <button class="button" type="submit">22</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder-3">
+            <div class="buttonCont">
+                <button class="button" type="submit">21</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder-4">
+            <div class="buttonCont">
+                <button class="button" type="submit">20</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder-3">
+            <div class="buttonCont">
+                <button class="button" type="submit">19</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder-2">
+            <div class="buttonCont">
+                <button class="button" type="submit">18</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder-1">
+            <div class="buttonCont">
+                <button class="button" type="submit">17</button>
+            </div>
+        </div>
+
+
+        <div class="externalBorder externalBorder1">
+            <div class="buttonCont">
+                <button class="button" type="submit">16</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder2">
+            <div class="buttonCont">
+                <button class="button" type="submit">15</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder3">
+            <div class="buttonCont">
+                <button class="button" type="submit">14</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder4">
+            <div class="buttonCont">
+                <button class="button" type="submit">13</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder5">
+            <div class="buttonCont">
+                <button class="button" type="submit">12</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder4">
+            <div class="buttonCont">
+                <button class="button" type="submit">11</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder3">
+            <div class="buttonCont">
+                <button class="button" type="submit">10</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder2">
+            <div class="buttonCont">
+                <button class="button" type="submit">9</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder1">
+            <div class="buttonCont">
+                <button class="button" type="submit">8</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder-1">
+            <div class="buttonCont">
+                <button class="button" type="submit">7</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder-2">
+            <div class="buttonCont">
+                <button class="button" type="submit">6</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder-3">
+            <div class="buttonCont">
+                <button class="button" type="submit">5</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder-4">
+            <div class="buttonCont">
+                <button class="button" type="submit">4</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder-3">
+            <div class="buttonCont">
+                <button class="button" type="submit">3</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder-2">
+            <div class="buttonCont">
+                <button class="button" type="submit">2</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder-1">
+            <div class="buttonCont">
+                <button class="button" type="submit">1</button>
+            </div>
+        </div>
+
+        <div class="externalBorder externalBorder1">
+            <div class="buttonCont">
+                <button class="button" type="submit">0</button>
+            </div>
+        </div>
+
+
+
+
         </div>
 
         <!--<div class="externalBorder" style="grid-column: 5; grid-row: 6;">
