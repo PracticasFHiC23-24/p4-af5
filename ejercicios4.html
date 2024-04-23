@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiReTo - Exercicis 2.1</title>
+    <link rel="icon" href="./images/wesicpfp.png" type="image/png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
+BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styleEjercicios.css" />
+    <script src="./js/appEjercicios1.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="level2_1.html">
+            <div class="close-container">
+                <div class="leftright"></div>
+                <div class="rightleft"></div>
+            </div>
+        </a>
+    </header>
+
+    <main>
+        <div class="title">
+            <h1>Lliçó 2.1 - Exercici 4</h1>
+        </div>
+
+
+        <div class="contenedor-texto">
+            <div class="num_ex"> 
+                <div class="buttonCont completedButton">
+                    <button class="button" type="submit">1</button>
+                </div>
+                <div class="buttonCont completedButton">
+                    <button class="button" type="submit">2</button>
+                </div>
+                <div class="buttonCont completedButton">
+                    <button class="button" type="submit">3</button>
+                </div>
+                <div class="buttonCont">
+                    <button class="button" type="submit">4</button>
+                </div>
+                <div class="buttonCont disabledButton">
+                    <button class="button" type="submit">5</button>
+                </div>
+                <div class="buttonCont disabledButton">
+                    <button class="button" type="submit">6</button>
+                </div>
+            </div>
+
+            <h2>Quina de les següents cançons usa exclusivament l'acord de MI Menor (Em)?</h2>
+
+            <p>Apreta els botons amb una nota musical per escoltar les melodies.</p>
+
+
+            <div class="image-container">
+                <div class="image-item">
+                    <div class="externalBorder" style="margin-top: 20px; max-width: 100px;">
+                        <div class="buttonCont">
+                            <button class="button" type="submit" onclick="playSong1()">
+                                <img src="images/icons8-quaver-100.png" alt="Tocar la Guitarra" height="20">
+                            </button>     
+                        </div>
+                    </div>                    
+                    <p class="image-title">Opció 1</p>
+                </div>
+                <div class="image-item">
+                    <div class="externalBorder" style="margin-top: 20px; max-width: 100px;">
+                        <div class="buttonCont">
+                            <button class="button" type="submit" onclick="playSong2()">
+                                <img src="images/icons8-quaver-100.png" alt="Tocar la Guitarra" height="20">
+                            </button>     
+                        </div>
+                    </div>                    
+                    <p class="image-title">Opció 2</p>
+                </div>
+                <div class="image-item">
+                    <div class="externalBorder" style="margin-top: 20px; max-width: 100px;">
+                        <div class="buttonCont">
+                            <button class="button" type="submit" onclick="playSong1()">
+                                <img src="images/icons8-quaver-100.png" alt="Tocar la Guitarra" height="20">
+                            </button>     
+                        </div>
+                    </div>                    
+                    <p class="image-title">Opció 3</p>
+                </div>
+                <div class="image-item">
+                    <div class="externalBorder" style="margin-top: 20px; max-width: 100px;">
+                        <div class="buttonCont">
+                            <button class="button" type="submit" onclick="playSong1()">
+                                <img src="images/icons8-quaver-100.png" alt="Tocar la Guitarra" height="20">
+                            </button>     
+                        </div>
+                    </div>                    
+                    <p class="image-title">Opció 4</p>
+                </div>
+            </div>
+          
+            <div class="button-container">
+                <div class="button">OPCIÓ 1</div>
+                <div class="button">OPCIÓ 2</div>
+                <div class="button">OPCIÓ 3</div>
+                <div class="button">OPCIÓ 4</div>
+            </div>
+
+            <div class="button-container">
+                <a href="ejercicios6.html" class="button" style="color: white; max-width: 300px; margin-top: 30px;">Ara no puc escoltar</a>
+            </div>
+            
+            
+            
+        </div>
+
+        <footer>
+            <p>Copyright &copy; FHiC 23-24 - MiReTo Music.</p>
+        </footer>  
+
+    </main>
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+        <audio id="mi_menor" src="videos/mi_menor.mp3" controls="false" hidden></audio>
+        <audio id="la_menor" src="videos/la_menor.mp3" controls="false" hidden></audio>
+
+        <script>
+
+            function playSong1() {
+                var song = document.getElementById("la_menor");
+                song.play();
+            }
+
+                        
+            function playSong2() {
+                var song = document.getElementById("mi_menor");
+                song.play();
+            }
+        </script>
+
+</body>
+
+</html>
