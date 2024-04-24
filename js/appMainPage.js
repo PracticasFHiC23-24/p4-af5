@@ -41,6 +41,7 @@ const app2 = Vue.createApp({
             window.location.href = ref;
             console.log();
         }
+        
 
     }
   });
@@ -69,6 +70,7 @@ window.onscroll = function() {
 
   prevScrollpos = currentScrollPos;
 }
+
 
 
 
