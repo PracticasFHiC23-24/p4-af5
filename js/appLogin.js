@@ -7,8 +7,8 @@ const app = Vue.createApp({
             url: 'https://vuejs.org',
             user: '',
             pswd: '',
-            savedUser: ['pauplanes', 'ninabravo'],
-            savedPswd: ['abc123abc', '123abc123'],
+            savedUser: ['pauTasca1', 'dianaTasca2', 'pauTasca3'],
+            savedPswd: ['abc123abc', 'abc123abc', 'abc123abc'],
             warning: ''
         };
     },
@@ -25,13 +25,15 @@ const app = Vue.createApp({
             
             var element = document.getElementById("warning");
             element.style.display = "none";
-
             if(this.user===this.savedUser[0] && this.pswd===this.savedPswd[0]){
                 event.preventDefault();
-                this.openPage("./pinicio.html");
+                this.openPage("./pinicioNewUser.html");
             } else if(this.user===this.savedUser[1] && this.pswd===this.savedPswd[1]){
                 event.preventDefault();
                 this.openPage("./pinicio.html");
+            } else if(this.user===this.savedUser[2] && this.pswd===this.savedPswd[2]){
+                event.preventDefault();
+                this.openPage("./askrepaso.html");
             } else {
                 if(this.user!==this.savedUser[0] && this.user!==this.savedUser[1]){
                     this.warning='Aquest usuari no existeix';
