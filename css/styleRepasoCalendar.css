@@ -394,7 +394,7 @@ h1 {
 
 .calendar{
   padding-left:40px;
-  padding-top: 30px;
+  padding-top: 0px;
 }
 
 .btn_place{
@@ -449,4 +449,8 @@ h1 {
       /* Center items horizontally */
       color: rgb(249, 247, 238);
   }
+}
+
+ol, ul {
+  padding-left: 0px;
 }

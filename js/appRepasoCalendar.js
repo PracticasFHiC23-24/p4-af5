@@ -12,20 +12,20 @@ const prenexIcons = document
  
 // Array of month names
 const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
+    "Gener",
+    "Febrer",
+    "Març",
+    "Abril",
+    "Maig",
+    "Juny",
+    "Juliol",
+    "Augost",
+    "Setembre",
+    "Octubre",
+    "Novembre",
+    "Desembre"
 ];
- 
+
 // Function to generate the calendar
 const manipulate = () => {
  
@@ -65,7 +65,8 @@ const manipulate = () => {
             && year === new Date().getFullYear()
             ? "active"
             : "";
-        lit += `<li class="${isToday}">${i}</li>`;
+        let id= "li"+i;
+        lit += `<li id="${id}" class="${isToday}" onclick="handleClick(${i})">${i}</li>`;
     }
  
     // Loop to add the first dates of the next month
@@ -83,6 +84,17 @@ const manipulate = () => {
 }
  
 manipulate();
+
+function handleClick(id){
+    console.log(id);
+    var element = document.getElementById("li" + id);
+    if(element.classList.contains("active")){
+        element.classList.remove("active");
+    }
+    else {
+    element.classList.add("active");
+    }
+}
  
 // Attach a click event listener to each icon
 prenexIcons.forEach(icon => {

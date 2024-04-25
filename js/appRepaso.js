@@ -16,7 +16,7 @@ const itemList = [
     {niv: '18', tema: 'Pentagrama'},
     {niv: '17', tema: 'Pentagrama'},
     {niv: '16', tema: 'Pentagrama'},
-    {niv: '15', tema: 'Pentagrama'},
+    {niv: '15', tema: 'Harmonia negativa'},
     {niv: '14', tema: 'Pentagrama'},
     {niv: '13', tema: 'Pentagrama'},
     {niv: '12', tema: 'Pentagrama'},
@@ -30,7 +30,8 @@ const itemList = [
     {niv: '4', tema: 'Pentagrama'},
     {niv: '3', tema: 'Pentagrama'},
     {niv: '2', tema: 'Pentagrama'},
-    {niv: '1', tema: 'Pentagrama'}
+    {niv: '1', tema: 'Pentagrama'},
+    {niv: '0', tema: 'Introducció'}
 ]
 
 const app = Vue.createApp({
