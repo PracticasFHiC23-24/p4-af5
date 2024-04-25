@@ -115,3 +115,18 @@ window.onscroll = function() {
 
   prevScrollpos = currentScrollPos;
 }
+
+
+document.getElementById('gotoRepas').addEventListener('click', function(event) {
+
+
+    console.log("hiiiiii");
+    if ( document.getElementById('gotoRepas').classList.contains('enabled') ) {
+      // Only execute the code if the clicked element has the 'clickable' class
+      console.log("holaaaaaaa");
+
+      window.location.href = "./teoria1Repaso.html";
+      
+      // You can perform further actions here
+    }
+  });
