@@ -4,7 +4,12 @@ const app = Vue.createApp({
             mensaje1: 'Hello world',
             mensaje2: 'Mi primer programa con',
             jsF: 'Vue',
-            url: 'https://vuejs.org'
+            url: 'https://vuejs.org',
+            selected: false,
+            selectedOp: '',
+            checked: false, 
+            checkBtn: 'COMPROVAR'
+
         };
     },
     methods: {
@@ -17,17 +22,344 @@ const app = Vue.createApp({
             console.log();
         }, 
         
-        makeRed(option){
-            var op = document.getElementById(option);
-            op.style.backgroundColor = 'rgb(255, 0, 0)';
+        checkAnswer(option){
+            var op = document.getElementById(this.selectedOp);
+            var warningDiv = document.getElementById('warning');
 
-            console.log('ride or die');
+            if(this.checked===true){
+                this.openPage('./ejercicios2.html');
+            } else {
+                if(this.selectedOp === ''){
+                    warningDiv.style.display = 'block';
+                } else if(this.selectedOp === option){
+                    warningDiv.style.display = 'none';
+                    op.style.backgroundColor = 'rgb(0, 255, 0)';
+                    this.checked = true;
+                    this.checkBtn = 'SEGÜENT';
+                } else {
+                    warningDiv.style.display = 'none';
+                    op.style.backgroundColor = 'rgb(255, 0, 0)';
+                    this.selected = false;
+                }
+            }
+            
+
+        }, getSelected(option){
+            var op = document.getElementById(option);
+            var computedStyle = window.getComputedStyle(op);
+            var backgroundColor = computedStyle.backgroundColor;
+            console.log("muevelo", op.style.backgroundColor);
+            if(this.checked===false){
+                if(backgroundColor === 'rgb(172, 172, 172)'){
+                    op.style.backgroundColor = 'rgb(249, 247, 238)';
+                    this.selected = false;
+                    
+                } else if(this.selected===false){
+                    op.style.backgroundColor = '#acacac';
+                    this.selected = true;
+                    this.selectedOp=option;
+                    console.log("nena");
+                }
+            }
+            
+            
         }
 
     }
   });
 
 app.mount("#app");
+
+
+
+
+const app2 = Vue.createApp({
+    data() {
+        return {
+            mensaje1: 'Hello world',
+            mensaje2: 'Mi primer programa con',
+            jsF: 'Vue',
+            url: 'https://vuejs.org',
+            selected: false,
+            selectedOp: '',
+            checked: false, 
+            checkBtn: 'COMPROVAR'
+
+        };
+    },
+    methods: {
+        mostrarUrl() {
+            return this.url;
+        },
+
+        openPage(ref) {
+            window.location.href = ref;
+            console.log();
+        }, 
+        
+        checkAnswer(option){
+            var op = document.getElementById(this.selectedOp);
+            var warningDiv = document.getElementById('warning');
+
+            if(this.checked===true){
+                this.openPage('./ejercicios3.html');
+            } else {
+                if(this.selectedOp === ''){
+                    warningDiv.style.display = 'block';
+                } else if(this.selectedOp === option){
+                    warningDiv.style.display = 'none';
+                    op.style.backgroundColor = 'rgb(0, 255, 0)';
+                    this.checked = true;
+                    this.checkBtn = 'SEGÜENT';
+                } else {
+                    warningDiv.style.display = 'none';
+                    op.style.backgroundColor = 'rgb(255, 0, 0)';
+                    this.selected = false;
+                }
+            }
+            
+
+        }, getSelected(option){
+            var op = document.getElementById(option);
+            var computedStyle = window.getComputedStyle(op);
+            var backgroundColor = computedStyle.backgroundColor;
+            if(this.checked===false){
+                if(backgroundColor === 'rgb(172, 172, 172)'){
+                    op.style.backgroundColor = 'rgb(249, 247, 238)';
+                    this.selected = false;
+                    
+                } else if(this.selected===false){
+                    op.style.backgroundColor = '#acacac';
+                    this.selected = true;
+                    this.selectedOp=option;
+
+                }
+            }
+            
+            
+        }
+
+    }
+  });
+
+app2.mount("#app2");
+
+
+
+const app3 = Vue.createApp({
+    data() {
+        return {
+            mensaje1: 'Hello world',
+            mensaje2: 'Mi primer programa con',
+            jsF: 'Vue',
+            url: 'https://vuejs.org',
+            selected: false,
+            selectedOp: '',
+            checked: false, 
+            checkBtn: 'COMPROVAR'
+
+        };
+    },
+    methods: {
+        mostrarUrl() {
+            return this.url;
+        },
+
+        openPage(ref) {
+            window.location.href = ref;
+            console.log();
+        }, 
+        
+        checkAnswer(option){
+            var op = document.getElementById(this.selectedOp);
+            var warningDiv = document.getElementById('warning');
+
+            if(this.checked===true){
+                this.openPage('./ejercicios4.html');
+            } else {
+                if(this.selectedOp === ''){
+                    warningDiv.style.display = 'block';
+                } else if(this.selectedOp === option){
+                    warningDiv.style.display = 'none';
+                    op.style.backgroundColor = 'rgb(0, 255, 0)';
+                    this.checked = true;
+                    this.checkBtn = 'SEGÜENT';
+                } else {
+                    warningDiv.style.display = 'none';
+                    op.style.backgroundColor = 'rgb(255, 0, 0)';
+                    this.selected = false;
+                }
+            }
+            
+
+        }, getSelected(option){
+            var op = document.getElementById(option);
+            var computedStyle = window.getComputedStyle(op);
+            var backgroundColor = computedStyle.backgroundColor;
+            if(this.checked===false){
+                if(backgroundColor === 'rgb(172, 172, 172)'){
+                    op.style.backgroundColor = 'rgb(249, 247, 238)';
+                    this.selected = false;
+                    
+                } else if(this.selected===false){
+                    op.style.backgroundColor = '#acacac';
+                    this.selected = true;
+                    this.selectedOp=option;
+
+                }
+            }
+            
+            
+        }
+
+    }
+  });
+
+app3.mount("#app3");
+
+
+const app4 = Vue.createApp({
+    data() {
+        return {
+            mensaje1: 'Hello world',
+            mensaje2: 'Mi primer programa con',
+            jsF: 'Vue',
+            url: 'https://vuejs.org',
+            selected: false,
+            selectedOp: '',
+            checked: false, 
+            checkBtn: 'COMPROVAR'
+
+        };
+    },
+    methods: {
+        mostrarUrl() {
+            return this.url;
+        },
+
+        openPage(ref) {
+            window.location.href = ref;
+            console.log();
+        }, 
+        
+        checkAnswer(option){
+            var op = document.getElementById(this.selectedOp);
+            var warningDiv = document.getElementById('warning');
+
+            if(this.checked===true){
+                this.openPage('./ejercicios6.html');
+            } else {
+                if(this.selectedOp === ''){
+                    warningDiv.style.display = 'block';
+                } else if(this.selectedOp === option){
+                    warningDiv.style.display = 'none';
+                    op.style.backgroundColor = 'rgb(0, 255, 0)';
+                    this.checked = true;
+                    this.checkBtn = 'SEGÜENT';
+                } else {
+                    warningDiv.style.display = 'none';
+                    op.style.backgroundColor = 'rgb(255, 0, 0)';
+                    this.selected = false;
+                }
+            }
+            
+
+        }, getSelected(option){
+            var op = document.getElementById(option);
+            var computedStyle = window.getComputedStyle(op);
+            var backgroundColor = computedStyle.backgroundColor;
+            if(this.checked===false){
+                if(backgroundColor === 'rgb(172, 172, 172)'){
+                    op.style.backgroundColor = 'rgb(249, 247, 238)';
+                    this.selected = false;
+                    
+                } else if(this.selected===false){
+                    op.style.backgroundColor = '#acacac';
+                    this.selected = true;
+                    this.selectedOp=option;
+
+                }
+            }
+            
+            
+        }
+
+    }
+  });
+
+app4.mount("#app4");
+
+
+const app5 = Vue.createApp({
+    data() {
+        return {
+            mensaje1: 'Hello world',
+            mensaje2: 'Mi primer programa con',
+            jsF: 'Vue',
+            url: 'https://vuejs.org',
+            selected: false,
+            selectedOp: '',
+            checked: false, 
+            checkBtn: 'COMPROVAR'
+
+        };
+    },
+    methods: {
+        mostrarUrl() {
+            return this.url;
+        },
+
+        openPage(ref) {
+            window.location.href = ref;
+            console.log();
+        }, 
+        
+        checkAnswer(option){
+            var op = document.getElementById(this.selectedOp);
+            var warningDiv = document.getElementById('warning');
+
+            if(this.checked===true){
+                this.openPage('./enhorabona.html');
+            } else {
+                if(this.selectedOp === ''){
+                    warningDiv.style.display = 'block';
+                } else if(this.selectedOp === option){
+                    warningDiv.style.display = 'none';
+                    op.style.backgroundColor = 'rgb(0, 255, 0)';
+                    this.checked = true;
+                    this.checkBtn = 'FINALITZAR';
+                } else {
+                    warningDiv.style.display = 'none';
+                    op.style.backgroundColor = 'rgb(255, 0, 0)';
+                    this.selected = false;
+                }
+            }
+            
+
+        }, getSelected(option){
+            var op = document.getElementById(option);
+            var computedStyle = window.getComputedStyle(op);
+            var backgroundColor = computedStyle.backgroundColor;
+            if(this.checked===false){
+                if(backgroundColor === 'rgb(172, 172, 172)'){
+                    op.style.backgroundColor = 'rgb(249, 247, 238)';
+                    this.selected = false;
+                    
+                } else if(this.selected===false){
+                    op.style.backgroundColor = '#acacac';
+                    this.selected = true;
+                    this.selectedOp=option;
+
+                }
+            }
+            
+            
+        }
+
+    }
+  });
+
+app5.mount("#app5");
 
 
 document.getElementById("myForm").addEventListener("submit", function(event) {

@@ -11,6 +11,9 @@
 BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styleTeoria.css" />
 
+    <script src=" https://unpkg.com/vue@3/dist/vue.global.js "></script>
+    <script src="./js/appDefaultpag.js" defer></script>
+
 </head>
 
 <body>
@@ -23,13 +26,13 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
         </a>
     </header>
 
-    <main>
+    <main id="app">
         <div class="title">
             <h1>Lliçó 2.1</h1>
             <h1>Aprèn: MI Menor (Em) </h1>
         </div>
 
-        <div class="contenedor-video">
+        <div class="contenedor-video" style="border-radius: 50%;">
             <video width="320" height="240" controls>
                 <source src="videos/mi_menor(1).mp4" type="video/mp4">
                 El teu navegador no suporta l'element de vídeo.
@@ -69,9 +72,9 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 
             <p>Assegura't que els teus dits no toquen altres cordes que no siguin les que necessites prémer. Les puntes dels dits haurien de prémer fermament contra les cordes per evitar qualsevol tipus de brunzit quan les cordes sonin. Una vegada els dits estiguin ben col·locats, toca totes les cordes amb la mà dreta. En tocar un Em, pots tocar totes les cordes des de la sisena corda (la més greu) fins a la primera (la més aguda). El so hauria de ser clar i ric, com el següent:</p>
 
-            <div class="externalBorder" style="margin-top: 20px; max-width: 100px;">
-                <div class="buttonCont">
-                    <button class="button" type="submit" onclick="playSong()">
+            <div class="externalBorder" style="margin-top: 20px; max-width: 100px; border-radius: 50%;">
+                <div class="buttonCont" style="border-radius: 50%;">
+                    <button class="button" type="submit" onclick="playSong()" style="border-radius: 50%; padding: 10px 10px; background-color: #b2b0fc;" >
                         <img src="images/icons8-quaver-100.png" alt="Tocar la Guitarra" height="20">
                     </button>     
                 </div>
@@ -82,11 +85,10 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
             <p>Ara que ja saps com formar l'acord de MI Menor, prova de canviar des d'altres acords bàsics que ja hem après, com són l'acord de MI Major o LA Major. Això t'ajudarà a millorar la teva agilitat i a familiaritzar-te amb el mànec de la guitarra.</p>
 
             <p>Felicitats, ara ja saps com tocar l'acord de MI Menor a la guitarra! Recorda que la clau per millorar és la pràctica constant. Dedica temps a practicar aquest acord i a integrar-lo en cançons que t'agradin. Amb paciència i pràctica, aviat veuràs com la teva habilitat amb la guitarra creix.</p>
-        
-            <div style="text-align: center;">
-                <a href="ejercicios1.html">
-                    <div class="button" style="font-family: 'TTRounds', sans-serif; max-width: 300px; display: inline-block;">EXERCICIS</div>
-                </a>
+    
+
+            <div style="position: fixed; top: 30px; right: 20px;">
+                    <div @onclick="openPage('./ejercicios1.html')" class="button" style="font-family: 'TTRounds', sans-serif; display: inline-block; padding-right: 30px;">EXERCICIS </div>
             </div>
 
         </div>
@@ -106,6 +108,8 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
                 var song = document.getElementById("mi_menor");
                 song.play();
             }
+
+
         </script>
         
 </body>

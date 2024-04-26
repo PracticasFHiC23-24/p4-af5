@@ -248,32 +248,62 @@ h1 {
 
 
 .buttonT {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    margin-left: 0px;
+    width: 300px;
+    margin:10px;
     padding: 10px 25px;
     font-size: 20px;
     font-weight: bold;
+    align-self: center;
     text-align: center;
     cursor: pointer;
     outline: none;
-    color: #000000;
-    background-color: #fff;
-    border: 1px solid #acacac;
+    color: #41464b;
+    background-color: rgb(249, 247, 238);
+    border: none;
     border-radius: 15px;
-    box-shadow: 0 4px #acacac;
-    text-decoration: none; /* Eliminar el subrayado */
-    display: block; /* Esto es crucial para que el enlace se comporte como un bloque */
-    width: 95%; /* Ocupar todo el ancho posible dentro de su contenedor */
+
+    border: 1px solid #41464b;
+    box-shadow: 0 3px #4b4a4a;
+    h2{
+        font-size: 20px;
+        font-weight: bold;
+        justify-content: start;
+        /* Center items horizontally */
+        color: #227ded;
+        pointer-events: none;
+    }
 }
 
+.buttonT:hover {
+    background-color: #c5c5c5;
+}
+
+.selected {
+    background-color: #c5c5c5;
+}
 .buttonT:active {
     background-color: #c5c5c5;
     box-shadow: 0 0px #3498db8d;
     transform: translateY(4px);
 }
 
+.enabled.thumbnail_btn {
+    top: -18px;
+    left: -13px;
+    display: block;
+    z-index: 999;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+/*change the number below to scale to the appropriate size*/
+.enabled.thumbnail_btn:hover {
+    transform: scale(1.1);
+    -webkit-transition-duration: 0.2s;
+
+}
 
 .button {
     margin-top: 20px;
@@ -304,6 +334,31 @@ h1 {
     background-color: #5cbeff;
     box-shadow: 0 0px #3498db8d;
     transform: translateY(4px);
+}
+
+
+.buttonNota {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 15px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #a3bdce;
+    border: none;
+    border-radius: 50%;
+    text-decoration: none; /* Eliminar el subrayado */
+    display: block; /* Esto es crucial para que el enlace se comporte como un bloque */
+    width: fit-content;
+}
+
+.buttonNota:hover {
+    background-color: #41b3ff7e
 }
 
 .nivellRight {
@@ -502,3 +557,58 @@ video {
     font-family: 'TTRounds', sans-serif;
     margin: 0 10px; /* Ajusta el margen entre los botones según sea necesario */
 }
+
+
+
+.repasContainer{
+
+  
+
+
+    position: sticky;
+    top: 30px;
+    right: 30px;
+  
+  
+  }
+  
+  
+  
+  
+  .btn_repasCont{
+  
+    position: absolute;
+    right: 30px;
+  
+    
+  }
+  
+  
+  .btn_repas{
+  
+    
+  
+    filter: drop-shadow(5px 5px 5px #222); 
+    
+    width: 150px;
+    height: auto;
+    /*margin-top: 20px;
+    margin-right: 20px;
+    
+    float: right;*/
+    /*less visible*/
+    top: -13px;
+    left: -8px;
+    display: block;
+    z-index: 2; /*was 999 but goes over the header*/
+    cursor: pointer;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+  }
+  
+  /*change the number below to scale to the appropriate size*/
+  .btn_repas:hover {
+    transform: scale(1.3);
+  
+  }

@@ -69,12 +69,11 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 
             <p>Com en l'anterior acord que has aprés, assegura't que els teus dits estan ben col·locats i no obstrueixen altres cordes. Prem fermament per evitar brunzits i assegura't que cada corda pugui resonar lliurement quan la toques. Amb els dits en posició, rasca totes les cordes des de la cinquena corda (A) fins a la primera (E). Les cordes han de sonar netes i clares, formant un so agradable i melancòlic que és característic dels acords menors.</p>
 
-            <div class="externalBorder" style="margin-top: 20px; max-width: 100px;">
-                <div class="buttonCont">
-                    <button class="button" type="submit" onclick="playSong()">
+            <div class="externalBorder" style="margin-top: 20px; max-width: 100px; border-radius: 50%;">
+                <div class="buttonCont" style="border-radius: 50%;">
+                    <button class="button" type="submit" onclick="playSong()" style="border-radius: 50%; padding: 10px 10px; background-color: #b2b0fc;" >
                         <img src="images/icons8-quaver-100.png" alt="Tocar la Guitarra" height="20">
-                    </button>
-                    
+                    </button>     
                 </div>
             </div>
 
@@ -84,10 +83,8 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 
             <p>Felicitats per haver afegit un altre acord al vostre repertori! L'acord de LA Menor és fonamental en moltes cançons i estils musicals. Recordeu que la pràctica constant és essencial per aprofundir la vostra comprensió i habilitat amb la guitarra. Continueu practicant, i no dubteu a revisar aquesta i altres lliçons quantes vegades necessiteu.</p>
         
-            <div style="text-align: center;">
-                <a href="ejercicios1.html">
-                    <div class="button" style="font-family: 'TTRounds', sans-serif; max-width: 300px; display: inline-block;">EXERCICIS</div>
-                </a>
+            <div style="position: fixed; top: 30px; right: 20px;">
+                <div @onclick="openPage('./ejercicios1.html')" class="button" style="font-family: 'TTRounds', sans-serif; display: inline-block; padding-right: 30px;">EXERCICIS </div>
             </div>
 
         </div>

@@ -31,63 +31,63 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 
 
         <div class="contenedor-texto">
-            <div class="num_ex"> 
-                <div class="buttonCont completedButton">
-                    <button class="button" type="submit">1</button>
-                </div>
+            <div class="num_ex row justify-content-center">
                 <div class="buttonCont">
-                    <a href="ejercicios2.html" class="button" style="color: white;">2</a>
+                    <button class="button" type="submit" style="padding: 10px;">1</button>
                 </div>
                 <div class="buttonCont disabledButton">
-                    <button class="button" type="submit">3</button>
+                    <button class="button" type="submit" style="padding: 10px;">2</button>
                 </div>
                 <div class="buttonCont disabledButton">
-                    <button class="button" type="submit">4</button>
+                    <button class="button" type="submit" style="padding: 10px;">3</button>
                 </div>
                 <div class="buttonCont disabledButton">
-                    <button class="button" type="submit">5</button>
+                    <button class="button" type="submit" style="padding: 10px;">4</button>
                 </div>
                 <div class="buttonCont disabledButton">
-                    <button class="button" type="submit">6</button>
+                    <button class="button" type="submit" style="padding: 10px;">5</button>
+                </div>
+                <div class="buttonCont disabledButton">
+                    <button class="button" type="submit" style="padding: 10px;">6</button>
                 </div>
             </div>
 
-            <h2>En quina posició s'han de posar els dits a les cordes de la guitarra per tocar la nota Mi menor (Em)?</h2>
+            <h2>En quina posició s'han de posar els dits a les cordes de la guitarra per tocar la nota Mi menor (Em)?
+            </h2>
 
+            <div id="warning" style="color: red; margin-top: 5px; margin-bottom: 5px; display: none;">Has de seleccionar alguna opció</div>
 
-            <div class="image-container">
-                <div class="image-item">
-                    <img src="images/acordes-menores-do.png" alt="Opcio 1" style="width: auto; height: 250px;">
-                    <p class="image-title">Opció 1</p>
-                </div>
-                <div class="image-item">
-                    <img src="images/acordes-menores-mi.png" alt="Opcio 2" style="width: auto; height: 250px;">
-                    <p class="image-title">Opció 2</p>
-                </div>
-                <div class="image-item">
-                    <img src="images/acordes-menores-la.png" alt="Opcio 3" style="width: auto; height: 250px;">
-                    <p class="image-title">Opció 3</p>
-                </div>
-                <div class="image-item">
-                    <img src="images/acordes-menores-re.png" alt="Opcio 4" style="width: auto; height: 250px;">
-                    <p class="image-title">Opció 4</p>
-                </div>
-            </div>
-          
             <div class="button-container">
-                <div class="button">OPCIÓ 1</div>
-                <a href="ejercicios2.html" class="button" style="color: white;">OPCIÓ 2</a>
-                <div class="button">OPCIÓ 3</div>
-                <div class="button">OPCIÓ 4</div>
+                <div class="buttonT thumbnail_btn" id="o1"><img src="images/acordes-menores-do.png"
+                        alt="Opcio 1" style="width: auto; height: 250px; border-radius: 15px; margin-top: 10px;">
+                    <p style="margin-top: 10px; margin-bottom: 0px;">OPCIÓ 1</p>
+                </div>
+                <div class="buttonT thumbnail_btn" style="background-color: green;" id="o2">
+                    <img src="images/acordes-menores-mi.png" alt="Opcio 1"
+                        style="width: auto; height: 250px; border-radius: 15px; margin-top: 10px;">
+                    <p style="margin-top: 10px; margin-bottom: 0px;">OPCIÓ 2</p>
+                </div>
+                <div class="buttonT thumbnail_btn"id="o3">
+                    <img src="images/acordes-menores-la.png" alt="Opcio 1"
+                        style="width: auto; height: 250px; border-radius: 15px; margin-top: 10px;">
+                    <p style="margin-top: 10px; margin-bottom: 0px;">OPCIÓ 3</p>
+                </div>
+                <div class="buttonT thumbnail_btn" id="o4">
+                    <img src="images/acordes-menores-re.png" alt="Opcio 1"
+                        style="width: auto; height: 250px; border-radius: 15px; margin-top: 10px;">
+                    <p style="margin-top: 10px; margin-bottom: 0px;">OPCIÓ 4</p>
+                </div>
             </div>
-            
-            
-            
+
+
+            <div class="button-container">
+                <div class="button thumbnail" style="color: white; max-width: 300px; margin-top: 30px;" @click="openPage('./ejercicios2.html')">SEGÜENT</div>
+            </div>
+
+
+
         </div>
 
-        <footer>
-            <p>Copyright &copy; FHiC 23-24 - MiReTo Music.</p>
-        </footer>  
 
     </main>
 
