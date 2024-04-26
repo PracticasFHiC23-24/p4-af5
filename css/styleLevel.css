@@ -199,6 +199,8 @@ nav>p {
 
 
 .title {
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 10px;
     text-align: center;
     font-size: x-large;
@@ -265,7 +267,7 @@ h1 {
 
 
     /*display: inline-block;*/
-    margin: 20px;
+    margin: 30px 60px;
     flex: 1;
     border-radius: 15px;
 
@@ -339,9 +341,8 @@ h1 {
 
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 30px;
-    margin-left: 30px;
-
+    margin-right: 0px;
+    margin-left: 0px;
     padding: 10px 25px;
     font-size: 20px;
     font-weight: bold;
@@ -352,9 +353,12 @@ h1 {
     background-color: #dadada;
     border: none;
     border-radius: 15px;
+    box-shadow: 0 4px #acacac;
+    text-decoration: none; /* Eliminar el subrayado */
+    display: block; /* Esto es crucial para que el enlace se comporte como un bloque */
+    width: 95%; /* Ocupar todo el ancho posible dentro de su contenedor */    
 
     border: 1px solid #acacac;
-    box-shadow: 0 4px #acacac;
 }
 
 /*.buttonT:hover {
@@ -444,5 +448,51 @@ h2 {
 a{
     text-decoration: none;
 }
+
+
+
+.close-container{
+    /*position: relative;*/
+    display: inline-block;
+
+    vertical-align: middle; /* Align the items vertically */
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  
+  .leftright{
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: #acacac;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transition: all .3s ease-in;
+  }
+  
+  .rightleft{
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: #acacac;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all .3s ease-in;
+  }
+  
+  .close-container:hover .leftright{
+    transform: rotate(-45deg);
+    background-color: #F25C66;
+  }
+  .close-container:hover .rightleft{
+    transform: rotate(45deg);
+    background-color: #F25C66;
+  }
 
 
