@@ -372,6 +372,10 @@ h1 {
   color: #fff;
 }
 
+.calendar-dates li.selected {
+  color: #fff;
+}
+
 .calendar-dates li::before {
   position: absolute;
   content: "";
@@ -385,10 +389,21 @@ h1 {
 }
 
 .calendar-dates li.active::before {
-  background: #6332c5;
+  background:#edb022;
+}
+.calendar-dates li.active.selected::before{
+  border: 4px solid #edb022;
 }
 
 .calendar-dates li:not(.active):hover::before {
+  background: #e4e1e1;
+}
+
+.calendar-dates li.selected::before {
+  background: #227ded;
+}
+
+.calendar-dates li:not(.selected):hover::before {
   background: #e4e1e1;
 }
 
