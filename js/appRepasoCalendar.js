@@ -1,6 +1,7 @@
 let date = new Date();
 let year = date.getFullYear();
 let month = date.getMonth();
+let selected = new Set();
  
 const day = document.querySelector(".calendar-dates");
  
@@ -65,8 +66,13 @@ const manipulate = () => {
             && year === new Date().getFullYear()
             ? "active"
             : "";
-        let id= "li"+i;
-        lit += `<li id="${id}" class="${isToday}" onclick="handleClick(${i})">${i}</li>`;
+
+        let isSelected =  selected.has(year.toString()+month.toString()+i.toString())
+            ? "selected"
+            : "";
+        //fem això perquè es puguin seleccionar les dates
+        let id = new Date(year, month, i).toDateString();
+        lit += `<li id="${id}" class="${isToday} ${isSelected}" onclick="handleClick(id)">${i}</li>`;
     }
  
     // Loop to add the first dates of the next month
@@ -85,15 +91,45 @@ const manipulate = () => {
  
 manipulate();
 
+//mètode per seleccionar dates fins l'actual
 function handleClick(id){
-    console.log(id);
-    var element = document.getElementById("li" + id);
-    if(element.classList.contains("active")){
-        element.classList.remove("active");
+    var date_element = new Date(id);
+    let current_date = new Date();
+    let btn = document.getElementById("btn_final");
+    selected.clear();
+    if (date_element <= current_date){
+        while(date_element <= current_date){
+            selected.add(date_element.getFullYear().toString()+date_element.getMonth().toString()+date_element.getDate().toString());
+            date_element= new Date(date_element.getFullYear(), date_element.getMonth(), date_element.getDate()+1);
+        }
+        btn.classList.add("enabled");
+
     }
-    else {
-    element.classList.add("active");
+    else{
+        btn.classList.remove("enabled");
     }
+    manipulate();
+    
+    /*
+    date_element.getDate() != current_date.getDate()
+        || date_element.getMonth() != current_date.getMonth()
+        || date_element.getFullYear() != current_date.getFullYear()
+    
+    
+    if (date_element <= date){
+        if(element.classList.contains("selected")){
+            element.classList.remove("selected");
+        }
+        else {
+            element.classList.add("selected");
+            while(date_element.getFullYear!=date.getFullYear || date_element.){
+                console.log(date_element);
+                date_element= new Date(date_element.getFullYear(), date_element.getMonth(), date_element.getDate()+1);
+                element=document.getElementById(date_element.toDateString());
+                element.classList.add("selected");
+            }
+        }
+    }*/
 }
  
 // Attach a click event listener to each icon
