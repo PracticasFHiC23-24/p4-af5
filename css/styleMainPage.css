@@ -392,6 +392,63 @@ h1 {
   transform: translateY(4px);
 }
 
+
+.buttonCompletedCont {
+  position: relative;
+
+  border-radius: 50%;
+  width: fit-content;
+  height: fit-content;
+
+
+  display: flex;
+  padding: 11px 11px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #95d8a2;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px #95d8a2;
+
+}
+.buttonCompleted {
+
+
+  width: 70px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  /*change to 10 25 to use it with text*/
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #3fa977;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px #245f43;
+
+}
+
+.buttonCompleted:hover {
+  background-color: #41ec9f;
+}
+
+.buttonCompleted:active {
+  background-color: #5cbeff;
+  box-shadow: 0 0px #3498db8d;
+  transform: translateY(4px);
+}
+
 .buttonDisabledCont {
   position: relative;
 

@@ -205,6 +205,10 @@ nav>p {
     text-align: center;
     font-size: x-large;
     /*font-family: Arial, Helvetica, sans-serif;*/
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -494,5 +498,19 @@ a{
     transform: rotate(45deg);
     background-color: #F25C66;
   }
+
+
+  .cursLogo{
+
+    
+    /*margin-top: 70px;
+    margin-left: 20px;
+    float: left;*/
+    
+    /*justify-content: center; /* Center items horizontally */
+    align-items: end; /* Center items vertically */
+    border-radius: 15px;
+    border: 2px solid #000000;
+}
 
 
