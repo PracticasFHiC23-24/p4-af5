@@ -16,9 +16,9 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 
 </head>
 
-<body id="app">
+<body>
     <header>
-        <a href="repaso.html">
+        <a href="level2_1.html">
             <div class="close-container">
                 <div class="leftright"></div>
                 <div class="rightleft"></div>
@@ -26,13 +26,13 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
         </a>
     </header>
 
-    <main>
+    <main id="app">
         <div class="title">
-            <h1>Teoria repàs del nivell 15</h1>
-            <h1>Aprèn: Harmonia negativa</h1>
+            <h1>Nivell 32: Lliçó 2</h1>
+            <h1>Aprèn: Escolta i apren </h1>
         </div>
 
-        <div class="contenedor-video">
+        <div class="contenedor-video" style="border-radius: 50%;">
             <video width="320" height="240" controls>
                 <source src="videos/mi_menor(1).mp4" type="video/mp4">
                 El teu navegador no suporta l'element de vídeo.
@@ -85,9 +85,10 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
             <p>Ara que ja saps com formar l'acord de MI Menor, prova de canviar des d'altres acords bàsics que ja hem après, com són l'acord de MI Major o LA Major. Això t'ajudarà a millorar la teva agilitat i a familiaritzar-te amb el mànec de la guitarra.</p>
 
             <p>Felicitats, ara ja saps com tocar l'acord de MI Menor a la guitarra! Recorda que la clau per millorar és la pràctica constant. Dedica temps a practicar aquest acord i a integrar-lo en cançons que t'agradin. Amb paciència i pràctica, aviat veuràs com la teva habilitat amb la guitarra creix.</p>
-        
-            <div @click="openPage('./ejercicios1Repaso.html')" style="position: fixed; top: 30px; right: 20px;">
-                <div  class="button" style="font-family: 'TTRounds', sans-serif; display: inline-block; padding-right: 30px; margin-top: 10px;">EXERCICIS </div>
+    
+
+            <div style="position: fixed; top: 30px; right: 20px;">
+                    <div @click="openPage('./ejercicios1Lvl32.html')" class="button" style="font-family: 'TTRounds', sans-serif; display: inline-block; padding-right: 30px; margin-top: 10px;">EXERCICIS </div>
             </div>
 
         </div>
@@ -107,6 +108,8 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
                 var song = document.getElementById("mi_menor");
                 song.play();
             }
+
+
         </script>
         
 </body>
