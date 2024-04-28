@@ -23,9 +23,6 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
                 <div class="rightleft"></div>
             </div>
         </a>
-    </header>
-
-    <main id="app">
 
         <div class="repasContainer" style="z-index: 150;" @click="openPage('./repaso.html')" id="repasBtn">
             <div class="btn_repasCont">
@@ -37,12 +34,20 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 
         </div>
 
+    </header>
+
+    <main id="app">
+
+
+
+
+
         <div class="title">
-            <h1>Lliçó 2.1 - Exercici 1</h1>
+            <h1>Lliçó 2.1: MI Menor (Em) - Exercici 1</h1>
         </div>
 
 
-        <div class="contenedor-texto">
+        <div class="contenedor-texto container-fluid">
             <div class="num_ex row justify-content-center">
                 <div class="buttonCont">
                     <button class="button" type="submit" style="padding: 10px;">1</button>
@@ -61,41 +66,54 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
                 </div>
             </div>
 
-            <h2>En quina posició s'han de posar els dits a les cordes de la guitarra per tocar la nota Mi menor (Em)?
-            </h2>
+            <div style="display: flex; justify-content: center;">
+                <h2>En quina posició s'han de posar els dits a les cordes de la guitarra per tocar la nota Mi menor
+                    (Em)?
+                </h2>
+                
+            </div>
 
-            <div id="warning" style="color: red; margin-top: 5px; margin-bottom: 5px; display: none;">Has de seleccionar alguna opció</div>
+            <div style="display: flex; justify-content: center;">
+                <div id="warning" style="color: red; margin-top: 5px; margin-bottom: 5px; display: none;">Has de
+                    seleccionar alguna opció</div>
+                
+            </div>
+            
 
-            <div class="button-container">
+
+
+
+            <div class="button-container row">
                 <div class="buttonT thumbnail_btn" @click="getSelected('o1')" id="o1">
                     <p style="margin-top: 10px; margin-bottom: 0px;">OPCIÓ 1</p>
-                    <img src="images/acordes-menores-do.png"
-                        alt="Opcio 1" style="width: auto; height: 250px; border-radius: 15px; margin-top: 10px;">
-                    
+                    <img src="images/acordes-menores-do.png" alt="Opcio 1"
+                        style="width: auto; height: 250px; border-radius: 15px; margin-top: 10px;">
+
                 </div>
                 <div class="buttonT thumbnail_btn" @click="getSelected('o2')" id="o2">
                     <p style="margin-top: 10px; margin-bottom: 0px;">OPCIÓ 2</p>
                     <img src="images/acordes-menores-mi.png" alt="Opcio 1"
                         style="width: auto; height: 250px; border-radius: 15px; margin-top: 10px;">
-                    
+
                 </div>
                 <div class="buttonT thumbnail_btn" @click="getSelected('o3')" id="o3">
                     <p style="margin-top: 10px; margin-bottom: 0px;">OPCIÓ 3</p>
                     <img src="images/acordes-menores-la.png" alt="Opcio 1"
                         style="width: auto; height: 250px; border-radius: 15px; margin-top: 10px;">
-                    
+
                 </div>
                 <div class="buttonT thumbnail_btn" @click="getSelected('o4')" id="o4">
                     <p style="margin-top: 10px; margin-bottom: 0px;">OPCIÓ 4</p>
                     <img src="images/acordes-menores-re.png" alt="Opcio 1"
                         style="width: auto; height: 250px; border-radius: 15px; margin-top: 10px;">
-                    
+
                 </div>
             </div>
 
 
             <div class="button-container" style="position: sticky; bottom: 3%">
-                <div class="button thumbnail" style="color: white; max-width: 300px; margin-top: 30px; " @click="checkAnswer('o2')">{{checkBtn}}</div>
+                <div class="button thumbnail" style="color: white; max-width: 300px; margin-top: 30px; "
+                    @click="checkAnswer('o2')">{{checkBtn}}</div>
             </div>
 
 

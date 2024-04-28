@@ -23,9 +23,6 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
                 <div class="rightleft"></div>
             </div>
         </a>
-    </header>
-
-    <main id="app2">
 
         <div class="repasContainer" style="z-index: 150;" @click="openPage('./repaso.html')" id="repasBtn">
             <div class="btn_repasCont">
@@ -37,14 +34,19 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 
         </div>
 
+    </header>
+
+    <main id="app2">
+
+
         <div class="title">
-            <h1>Lliçó 2.1 - Exercici 2</h1>
+            <h1>Lliçó 2.1: MI Menor (Em) - Exercici 2</h1>
         </div>
 
-        
 
 
-        <div class="contenedor-texto">
+
+        <div class="contenedor-texto container-fluid">
 
 
             <div class="num_ex row justify-content-center">
@@ -66,17 +68,30 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 
             </div>
 
-            <h2>Quina de les següents melodies de guitarra es correspón amb la nota musical Mi menor (Em)?</h2>
-
-            <p style="font-size: 13px;">Apreta els botons amb una nota musical per escoltar les melodies.</p>
-
-            <div id="warning" style="color: red; margin-top: 5px; margin-bottom: 5px; display: none;">Has de seleccionar
-                alguna opció</div>
 
 
 
-            <div class="button-container">
-                <div class=" row justify-content-center" style="position: relative; margin: 10px;">
+
+            <div style="display: flex; justify-content: center;">
+                <h2>Quina de les següents melodies de guitarra es correspón amb la nota musical Mi menor (Em)?</h2>
+
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <p style="font-size: 13px;">Apreta els botons amb una nota musical per escoltar les melodies.</p>
+
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <div id="warning" style="color: red; margin-top: 5px; margin-bottom: 5px; display: none;">Has de
+                    seleccionar alguna opció</div>
+
+            </div>
+
+
+
+            <div class="button-container row">
+                <div class="row justify-content-center" style="position: relative; margin: 10px; width: fit-content;">
 
                     <button class="buttonNota" type="submit" onclick="playSong1()"
                         style="z-index: 10; position: absolute;">
@@ -90,7 +105,7 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 
                 </div>
 
-                <div class=" row justify-content-center" style="position: relative; margin: 10px;">
+                <div class=" row justify-content-center" style="position: relative; margin: 10px; width: fit-content;">
 
                     <button class="buttonNota" type="submit" onclick="playSong2()"
                         style="z-index: 10; position: absolute;">
@@ -104,7 +119,7 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 
                 </div>
 
-                <div class=" row justify-content-center" style="position: relative; margin: 10px;">
+                <div class=" row justify-content-center" style="position: relative; margin: 10px; width: fit-content;">
 
                     <button class="buttonNota" type="submit" onclick="playSong1()"
                         style="z-index: 10; position: absolute;">
@@ -118,7 +133,7 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 
                 </div>
 
-                <div class=" row justify-content-center" style="position: relative; margin: 10px;">
+                <div class=" row justify-content-center" style="position: relative; margin: 10px; width: fit-content;">
 
                     <button class="buttonNota" type="submit" onclick="playSong1()"
                         style="z-index: 10; position: absolute;">
@@ -133,13 +148,13 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
                 </div>
             </div>
 
-            <div class="button-container" style="position: sticky; bottom: 3%">
+            <div class="button-container" style="position: sticky; bottom: 3%; z-index: 2001;">
                 <div class="button thumbnail" style="color: white; max-width: 300px; margin-top: 30px;"
                     @click="checkAnswer('o2')">{{checkBtn}}</div>
             </div>
 
             <div class=""></div>
-            <a href="./ejercicios3.html" style="color: black; max-width: 300px; margin-top: 30px;">Ara no puc
+            <a href="./ejercicios3.html" style="color: black; max-width: 300px; margin-top: 30px; margin-bottom: 20px;">Ara no puc
                 escoltar</a>
 
 
