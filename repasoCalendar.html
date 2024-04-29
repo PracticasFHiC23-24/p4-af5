@@ -65,10 +65,10 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 
     <div class="top">
       <div class="filter">
-        <div class="filter_btn">
+        <div id="btn_niv" class="filter_btn" @click="selectFilterNiv">
           <h2>Des d'un nivell</h2>
         </div>
-        <div class="filter_btn">
+        <div id="btn_data" class="filter_btn" @click="selectFilterData">
           <h2>Des d'una data</h2>
         </div>
       </div>
@@ -102,6 +102,11 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
           <ul class="calendar-dates"></ul>
         </div>
       </div>
+      <div class="btn_place">
+        <div id="btn_final_data" class="button thumbnail_btn">
+          <h2>COMENÇA EL REPÀS</h2>
+        </div>
+      </div>
     </div>
     <div class="niv_per_dates">
       <div class="container-fluid">
@@ -116,10 +121,10 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
             </div>
         </div>
       </div>
-    </div>
-    <div class="btn_place">
-      <div id="btn_final" class="button thumbnail_btn">
-        <h2>COMENÇA EL REPÀS</h2>
+      <div class="btn_place">
+        <div id="btn_final_niv" class="button thumbnail_btn">
+          <h2>COMENÇA EL REPÀS</h2>
+        </div>
       </div>
     </div>
     </main>
