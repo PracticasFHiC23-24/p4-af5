@@ -283,6 +283,8 @@ h1 {
 .main_calendar {
   width: 100%;
   display: flex;
+  flex-direction:column;
+  align-items: center;
   background: rgb(253, 241, 215);
   padding: 2%;
   justify-content: center;
@@ -601,4 +603,22 @@ h3{
 .row{
   padding-top:10px
 }
+
+
+.btn_place_niv{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  position: sticky;
+  margin-bottom: 20px;
+  bottom: 3%;
+}
+
+.btn_place_data{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 
