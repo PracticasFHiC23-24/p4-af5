@@ -15,8 +15,9 @@ const app = Vue.createApp({
         },
 
         openPage(ref) {
+            console.log("esa combiii");
             window.location.href = ref;
-            console.log();
+            
         }
 
     }

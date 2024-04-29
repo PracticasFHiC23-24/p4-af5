@@ -444,8 +444,8 @@ h1 {
 }
 
 .buttonCompleted:active {
-  background-color: #5cbeff;
-  box-shadow: 0 0px #3498db8d;
+  background-color: #41ec9f;
+  box-shadow: 0 0px #245f43;
   transform: translateY(4px);
 }
 
