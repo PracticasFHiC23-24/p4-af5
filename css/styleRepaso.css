@@ -297,22 +297,6 @@ h1 {
     /*height: fit-content;*/
 }
 
-.nivells {
-
-
-    /*display: inline-block;*/
-    margin: 20px;
-
-    flex: 1;
-
-    
-
-    border-radius: 15px;
-
-    border: 1px solid #acacac;
-
-}
-
 
 .buttonT {
     width: 300px;
@@ -493,4 +477,7 @@ h1 {
         font-size:20px;
         color:#41464b;
     }
+}
+.container_del_container{
+    margin: 0 10%;
 }

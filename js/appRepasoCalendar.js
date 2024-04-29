@@ -1,3 +1,103 @@
+
+// Agrupar los elementos de itemList por fecha
+
+const app = Vue.createApp({
+    data() {
+      return {
+        itemList: [
+          { niv: '32', tema: 'Improvisació', data: "28/04/24" },
+          { niv: '31', tema: 'Acompanyaments', data: "28/04/24" },
+          { niv: '30', tema: 'Arpegis', data: "25/04/24" },
+          { niv: '29', tema: 'Poliritmes', data: "25/04/24" },
+          { niv: '28', tema: 'Progressions avançades', data: "25/04/24" },
+          { niv: '27', tema: 'Ritmes avançats', data: "22/04/24" },
+          { niv: '26', tema: 'Ritmes bàsics', data: "22/04/24" },
+          { niv: '25', tema: 'Cercle de quintes', data: "18/04/24" },
+          { niv: '24', tema: 'Progressions bàsiques', data: "18/04/24" },
+          { niv: '23', tema: 'Harmonia avançada', data: "10/04/24" },
+          { niv: '22', tema: 'Digitació avançada', data: "04/04/24" },
+          { niv: '21', tema: 'Digitació bàsica', data: "01/04/24" },
+          { niv: '20', tema: 'Altres escales (II)', data: "22/03/24" },
+          { niv: '19', tema: 'Altres escales (I)', data: "22/03/24" },
+          { niv: '18', tema: 'Escales pentatòniques', data: "22/03/24" },
+          { niv: '17', tema: 'Escales menors', data: "18/03/24" },
+          { niv: '16', tema: 'Escales majors', data: "18/03/24" },
+          { niv: '15', tema: 'Harmonia negativa', data: "18/03/24" },
+          { niv: '14', tema: 'Harmonia bàsica', data: "14/03/24" },
+          { niv: '13', tema: 'Invertir acords', data: "14/03/24" },
+          { niv: '12', tema: 'Altres acords', data: "13/03/24" },
+          { niv: '11', tema: 'Power chords', data: "13/03/24" },
+          { niv: '10', tema: 'Acords disminuits', data: "13/03/24" },
+          { niv: '9', tema: 'Acords augmentats', data: "13/03/24" },
+          { niv: '8', tema: 'Acords menors', data: "11/03/24" },
+          { niv: '7', tema: 'Acords majors', data: "11/03/24" },
+          { niv: '6', tema: 'Intervals', data: "11/03/24" },
+          { niv: '5', tema: 'Sostinguts i bemols', data: "10/03/24" },
+          { niv: '4', tema: 'Escala Do major', data: "10/03/24" },
+          { niv: '3', tema: 'Llegir partitures', data: "10/03/24" },
+          { niv: '2', tema: 'Llegir tablatures', data: "10/03/24" },
+          { niv: '1', tema: 'Pentagrama', data: "10/03/24" },
+          { niv: '0', tema: 'Introducció', data: "10/03/24" }
+        ],
+        selected: false
+      };
+    },
+    computed: {
+        groupedItemsArray() {
+          // Agrupa los elementos de itemList por fecha
+          const groupedItems = {};
+          this.itemList.forEach(item => {
+            if (!groupedItems[item.data]) {
+              groupedItems[item.data] = [];
+            }
+            groupedItems[item.data].push(item);
+          });
+          // Convierte el objeto en un array
+          return Object.values(groupedItems);
+        }
+      },
+    methods: {
+    
+      selectButton(event) {
+        var button = document.getElementById("btn_final");
+        let niv_clic = parseInt(event.target.id);
+        let niv = parseInt(this.itemList[0].niv);
+        while(niv_clic<=niv){
+            document.getElementById(niv.toString()).classList.add("selected");
+            niv--;
+        }
+        let trobat= false;
+        while(!trobat && niv >=0){
+            if(document.getElementById(niv.toString()).classList.contains("selected")){
+                document.getElementById(niv.toString()).classList.remove("selected");
+                niv--;
+            }
+            else{
+                trobat= true;
+            }
+        }
+        if(!this.selected){
+            this.selected = true;
+            button.classList.add("enabled");
+          }
+      },
+  
+      mostrarUrl() {
+        return this.url;
+      },
+  
+      openPage(ref) {
+        window.location.href = ref;
+        console.log();
+      }
+  
+    }
+  });
+  
+  app.mount("#calendar");
+
+
+
 let date = new Date();
 let year = date.getFullYear();
 let month = date.getMonth();
@@ -110,26 +210,6 @@ function handleClick(id){
     }
     manipulate();
     
-    /*
-    date_element.getDate() != current_date.getDate()
-        || date_element.getMonth() != current_date.getMonth()
-        || date_element.getFullYear() != current_date.getFullYear()
-    
-    
-    if (date_element <= date){
-        if(element.classList.contains("selected")){
-            element.classList.remove("selected");
-        }
-        else {
-            element.classList.add("selected");
-            while(date_element.getFullYear!=date.getFullYear || date_element.){
-                console.log(date_element);
-                date_element= new Date(date_element.getFullYear(), date_element.getMonth(), date_element.getDate()+1);
-                element=document.getElementById(date_element.toDateString());
-                element.classList.add("selected");
-            }
-        }
-    }*/
 }
  
 // Attach a click event listener to each icon

@@ -71,17 +71,19 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
             </div>
         </div>
 
-  
+      <div class="container_del_container">
       <div class="container-fluid">
-        <div class="row" >
-            <div class="col" v-for="item in rendered" :key="item.niv" >
-                <div class="buttonT thumbnail_btn" v-on:click="selectButton">
-                    <h2>{{item.niv}}</h2>
-                    <h2>{{item.tema}}</h2>
-                </div>
-            </div>
+        <div class="row row-cols-xl-3 row-cols-sm-1 row-cols-md-2 justify-content-start" >
+          <div class="col" v-for="item in rendered" :key="item.niv" >
+              <div class="buttonT thumbnail_btn" v-on:click="selectButton">
+                  <h2>{{item.niv}}</h2>
+                  <h2>{{item.tema}}</h2>
+              </div>
+          </div>
         </div>
       </div>
+      </div>
+    </div>
 
       <div id="no_result" v-if="rendered.length==0">
         <h2>NO S'HA TROBAT CAP NIVELL RELACIONAT</h2>
@@ -89,7 +91,7 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
 
       <div class="btn_place" v-else>
         <div class="button thumbnail_btn" id="gotoRepas">
-         <h2>COMENÇAR EL REPÀS</h2>
+         <h2>COMENÇA EL REPÀS</h2>
         </div>
       </div>
     </main>
@@ -108,4 +110,3 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
   </body>
   
   </html>
-  d
