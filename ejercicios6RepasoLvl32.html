@@ -11,26 +11,26 @@
 BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styleEjercicios.css" />
     <script src=" https://unpkg.com/vue@3/dist/vue.global.js "></script>
-    <script src="./js/appEjercicios1Repaso.js" defer></script>
+    <script src="./js/appEjercicios1RepasoLvl32.js" defer></script>
 
 </head>
 
-<body id="app3">
+<body id="app5">
     <header>
-        <a href="ejercicios3Lvl32.html">
+        <a href="mainPage.html">
             <div class="close-container">
                 <div class="leftright"></div>
                 <div class="rightleft"></div>
             </div>
         </a>
-        
+
+
     </header>
 
-    <main>
-
+    <main >
 
         <div class="title">
-            <h1>Repàs: Harmonia negativa - Exercici 3</h1>
+            <h1>Repàs de del nivell 12 - Exercici 5</h1>
         </div>
 
 
@@ -42,22 +42,22 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
                 <div class="buttonCont completedButton">
                     <button class="button" type="submit" style="padding: 10px;">2</button>
                 </div>
-                <div class="buttonCont">
+                <div class="buttonCont completedButton">
                     <button class="button" type="submit" style="padding: 10px;">3</button>
                 </div>
-                <div class="buttonCont disabledButton">
+                <div class="buttonCont completedButton">
                     <button class="button" type="submit" style="padding: 10px;">4</button>
                 </div>
-                <div class="buttonCont disabledButton">
+                <div class="buttonCont ">
                     <button class="button" type="submit" style="padding: 10px;">5</button>
                 </div>
+
             </div>
 
-            
+
 
             <div style="display: flex; justify-content: center;">
-                <h2>Com s'han de tocar les cordes de la guitarra per fer l'acord de MI menor (Em)?</h2>
-
+                <h2>(Repàs de lliçons anteriors) Quina de les següents frases és falsa?</h2>
             </div>
 
             <div style="display: flex; justify-content: center;">
@@ -67,42 +67,33 @@ BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="an
             </div>
 
 
+            <div class="button-container row">
 
-            <div class="button-container row ">
-
-                <div class="buttonT thumbnail_btn" @click="getSelected('o1')" id="o1" style="height: 160px;"> 
-                    <p style="margin-top: 10px; margin-bottom: 0px;">OPCIÓ 1: Des de la sisena corda (la més greu) fins
-                        a la
-                        primera (la més aguda).</p>
+                <div class="buttonT thumbnail_btn" @click="getSelected('o1')" id="o1" style="height: 160px;">
+                    <p style="margin-top: 10px; margin-bottom: 0px;">OPCIÓ 1: La guitarra s'afina utilitzant un
+                        metrònom.</p>
                 </div>
 
-                <div class="buttonT thumbnail_btn " @click="getSelected('o2')" id="o2" style="height: 160px;"> 
-                    <p style="margin-top: 10px; margin-bottom: 0px;">OPCIÓ 2: Des de la primera corda (la més aguda)
-                        fins a
-                        la sisena (la més greu).</p>
+                <div class="buttonT thumbnail_btn " @click="getSelected('o2')" id="o2" style="height: 160px;">
+                    <p style="margin-top: 10px; margin-bottom: 0px;">OPCIÓ 2: Una de les cordes més agudes és la corda
+                        E.</p>
                 </div>
 
                 <div class="buttonT thumbnail_btn " @click="getSelected('o3')" id="o3" style="height: 160px;">
-                    <p style="margin-top: 10px; margin-bottom: 0px;">OPCIÓ 3: Des de la sisena corda (la més greu) fins
-                        a la
-                        segona.</p>
+                    <p style="margin-top: 10px; margin-bottom: 0px;">OPCIÓ 3: Per a una afinació estàndard, la corda més
+                        greu és la corda G.</p>
                 </div>
 
                 <div class="buttonT thumbnail_btn" @click="getSelected('o4')" id="o4" style="height: 160px;">
-                    <p style="margin-top: 10px; margin-bottom: 0px;">OPCIÓ 4: Des de la cinquena corda fins a la primera
-                        (la
-                        més aguda).</p>
+                    <p style="margin-top: 10px; margin-bottom: 0px;">OPCIÓ 4: És freqüent usar una pipeta per facilitar
+                        l'afinació de la guitarra.</p>
                 </div>
             </div>
 
             <div class="button-container" style="position: sticky; bottom: 3%">
                 <div class="button thumbnail" style="color: white; max-width: 300px; margin-top: 30px;"
-                    @click="checkAnswer('o1')">{{checkBtn}}</div>
+                    @click="checkAnswer('o4')">{{checkBtn}}</div>
             </div>
-
-
-        </div>
-
 
     </main>
 

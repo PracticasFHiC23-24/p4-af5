@@ -301,7 +301,7 @@ document.getElementById('btn_final_data').addEventListener('click', function(eve
     if ( document.getElementById('btn_final_data').classList.contains('enabled') ) {
       // Only execute the code if the clicked element has the 'clickable' class
 
-      window.location.href = "./teoria1Repaso.html";
+      window.location.href = "./teoria1RepasoLvl32.html";
       
       // You can perform further actions here
     }
@@ -313,7 +313,7 @@ document.getElementById('btn_final_data').addEventListener('click', function(eve
     if ( document.getElementById('btn_final_niv').classList.contains('enabled') ) {
       // Only execute the code if the clicked element has the 'clickable' class
 
-      window.location.href = "./teoria1Repaso.html";
+      window.location.href = "./teoria1RepasoLvl32.html";
       
       // You can perform further actions here
     }
