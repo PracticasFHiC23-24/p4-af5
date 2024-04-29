@@ -610,7 +610,8 @@ h3{
   display:flex;
   justify-content: center;
   position: sticky;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   bottom: 3%;
 }
 
