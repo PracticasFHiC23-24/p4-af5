@@ -33,7 +33,7 @@ const app = Vue.createApp({
                 this.openPage("./pinicio.html");
             } else if(this.user===this.savedUser[2] && this.pswd===this.savedPswd[2]){
                 event.preventDefault();
-                this.openPage("./askrepaso.html");
+                this.openPage("./pinicioTasca3.html");
             } else {
                 if(this.user!==this.savedUser[0] && this.user!==this.savedUser[1]){
                     this.warning='Aquest usuari no existeix';

@@ -48,14 +48,21 @@ const app = Vue.createApp({
             var op = document.getElementById(option);
             var computedStyle = window.getComputedStyle(op);
             var backgroundColor = computedStyle.backgroundColor;
+            console.log("muevelo", op.style.backgroundColor);
             if(this.checked===false){
-                if(backgroundColor === 'rgb(172, 172, 172)'){
+                if(backgroundColor === 'rgb(172, 172, 172)' && this.selected===true){
                     op.style.backgroundColor = 'rgb(249, 247, 238)';
                     this.selected = false;
-                    
+                    this.selectedOp=''
                 } else if(this.selected===false){
                     op.style.backgroundColor = '#acacac';
                     this.selected = true;
+                    this.selectedOp=option;
+                    console.log("nena");
+                } else if(this.selected===true){
+                    op.style.backgroundColor = '#acacac';
+                    var opSel = document.getElementById(this.selectedOp);
+                    opSel.style.backgroundColor = 'rgb(249, 247, 238)';
                     this.selectedOp=option;
                 }
             }
@@ -121,16 +128,22 @@ const app2 = Vue.createApp({
             var op = document.getElementById(option);
             var computedStyle = window.getComputedStyle(op);
             var backgroundColor = computedStyle.backgroundColor;
+            console.log("muevelo", op.style.backgroundColor);
             if(this.checked===false){
-                if(backgroundColor === 'rgb(172, 172, 172)'){
+                if(backgroundColor === 'rgb(172, 172, 172)' && this.selected===true){
                     op.style.backgroundColor = 'rgb(249, 247, 238)';
                     this.selected = false;
-                    
+                    this.selectedOp=''
                 } else if(this.selected===false){
                     op.style.backgroundColor = '#acacac';
                     this.selected = true;
                     this.selectedOp=option;
-
+                    console.log("nena");
+                } else if(this.selected===true){
+                    op.style.backgroundColor = '#acacac';
+                    var opSel = document.getElementById(this.selectedOp);
+                    opSel.style.backgroundColor = 'rgb(249, 247, 238)';
+                    this.selectedOp=option;
                 }
             }
             
@@ -194,16 +207,22 @@ const app3 = Vue.createApp({
             var op = document.getElementById(option);
             var computedStyle = window.getComputedStyle(op);
             var backgroundColor = computedStyle.backgroundColor;
+            console.log("muevelo", op.style.backgroundColor);
             if(this.checked===false){
-                if(backgroundColor === 'rgb(172, 172, 172)'){
+                if(backgroundColor === 'rgb(172, 172, 172)' && this.selected===true){
                     op.style.backgroundColor = 'rgb(249, 247, 238)';
                     this.selected = false;
-                    
+                    this.selectedOp=''
                 } else if(this.selected===false){
                     op.style.backgroundColor = '#acacac';
                     this.selected = true;
                     this.selectedOp=option;
-
+                    console.log("nena");
+                } else if(this.selected===true){
+                    op.style.backgroundColor = '#acacac';
+                    var opSel = document.getElementById(this.selectedOp);
+                    opSel.style.backgroundColor = 'rgb(249, 247, 238)';
+                    this.selectedOp=option;
                 }
             }
             
@@ -266,16 +285,22 @@ const app4 = Vue.createApp({
             var op = document.getElementById(option);
             var computedStyle = window.getComputedStyle(op);
             var backgroundColor = computedStyle.backgroundColor;
+            console.log("muevelo", op.style.backgroundColor);
             if(this.checked===false){
-                if(backgroundColor === 'rgb(172, 172, 172)'){
+                if(backgroundColor === 'rgb(172, 172, 172)' && this.selected===true){
                     op.style.backgroundColor = 'rgb(249, 247, 238)';
                     this.selected = false;
-                    
+                    this.selectedOp=''
                 } else if(this.selected===false){
                     op.style.backgroundColor = '#acacac';
                     this.selected = true;
                     this.selectedOp=option;
-
+                    console.log("nena");
+                } else if(this.selected===true){
+                    op.style.backgroundColor = '#acacac';
+                    var opSel = document.getElementById(this.selectedOp);
+                    opSel.style.backgroundColor = 'rgb(249, 247, 238)';
+                    this.selectedOp=option;
                 }
             }
             
@@ -338,16 +363,22 @@ const app5 = Vue.createApp({
             var op = document.getElementById(option);
             var computedStyle = window.getComputedStyle(op);
             var backgroundColor = computedStyle.backgroundColor;
+            console.log("muevelo", op.style.backgroundColor);
             if(this.checked===false){
-                if(backgroundColor === 'rgb(172, 172, 172)'){
+                if(backgroundColor === 'rgb(172, 172, 172)' && this.selected===true){
                     op.style.backgroundColor = 'rgb(249, 247, 238)';
                     this.selected = false;
-                    
+                    this.selectedOp=''
                 } else if(this.selected===false){
                     op.style.backgroundColor = '#acacac';
                     this.selected = true;
                     this.selectedOp=option;
-
+                    console.log("nena");
+                } else if(this.selected===true){
+                    op.style.backgroundColor = '#acacac';
+                    var opSel = document.getElementById(this.selectedOp);
+                    opSel.style.backgroundColor = 'rgb(249, 247, 238)';
+                    this.selectedOp=option;
                 }
             }
             
