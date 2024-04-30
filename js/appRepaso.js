@@ -129,17 +129,3 @@ document.getElementById('gotoRepas').addEventListener('click', function(event) {
       // You can perform further actions here
     }
   });
-
-
-  document.getElementById('gotoRepasLvl32').addEventListener('click', function(event) {
-
-
-    
-    if ( document.getElementById('gotoRepasLvl32').classList.contains('enabled') ) {
-      // Only execute the code if the clicked element has the 'clickable' class
-
-      window.location.href = "./teoria1RepasoLvl32.html";
-      
-      // You can perform further actions here
-    }
-  });
