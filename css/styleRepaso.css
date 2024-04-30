@@ -274,7 +274,7 @@ footer>p {
 
 
 h1 {
-    color:#41464b;
+    color:#212529;
     margin-top: 10px;
     font-weight: bold;
 }
@@ -308,12 +308,12 @@ h1 {
     text-align: center;
     cursor: pointer;
     outline: none;
-    color: #41464b;
+    color: #212529;;
     background-color: rgb(249, 247, 238);
     border: none;
     border-radius: 15px;
 
-    border: 1px solid #41464b;
+    border: 1px solid #212529;
     box-shadow: 0 3px #4b4a4a;
     h2{
         font-size: 20px;
@@ -365,11 +365,11 @@ h1 {
     border: 1px solid #acacac;
     box-shadow: 0 4px #acacac;
     &.enabled{
-        color: #41464b;
+        color: #212529;
         background-color: #227ded;
         border: none;
         border-radius: 15px;
-        border: 1px solid #41464b;
+        border: 1px solid #212529;
         box-shadow: 0 3px #4b4a4a;
         h2{
             font-size: 25px;
@@ -475,7 +475,7 @@ h1 {
     justify-content: center;
     h2{
         font-size:20px;
-        color:#41464b;
+        color:#212529;
     }
 }
 .container_del_container{
